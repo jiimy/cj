@@ -33,16 +33,16 @@ var PATH = {
 gulp.task("scss:compile", () => {
   return new Promise((resolve) => {
     var options = {
-      outputStyle: "nested", // nested, expanded, compact, compressed
+      outputStyle: "compact", // nested, expanded, compact, compressed
       indentType: "space", // space, tab , indentWidth: 4
       precision: 8,
-      sourceComments: true, // 코멘트 제거 여부
+      sourceComments: false, // 코멘트 제거 여부
     };
 
     gulp.src(PATH.ASSETS.STYLE + "/*.scss")
       .pipe(sourcemaps.init())
       .pipe(scss(options))
-      .pipe(sourcemaps.write())
+      // .pipe(sourcemaps.write())
       .pipe(gulp.dest(DEST_PATH.ASSETS.STYLE))
       .pipe(browserSync.reload({ stream: true }));
     resolve();
