@@ -11,7 +11,12 @@ function closepopup(closeBtn){
 }
 
 closepopup('.close-btn, .dim');
-showpopup('.detail', '.recipe');
+
+showpopup('.btn-complete-vote', '.complete-vote');
+showpopup('.btn-recipe', '.recipe');
+showpopup('.btn-correct-answer', '.correct-answer');
+showpopup('.btn-agree', '.agree');
+showpopup('.btn-false-answer', '.false-answer');
 
 // $('.detail').click(function(){
 //   $('.recipe').addClass('block');

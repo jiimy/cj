@@ -243,11 +243,11 @@
 
 
     <div class="popup-btns">
-      <button class="complete-vote">투표완료</button>
-      <button>레시피</button>
-      <button>정답입니다.</button>
-      <button>개인정보동의</button>
-      <button>다시생각해보세요.</button>
+      <button class="btn-complete-vote">투표완료(개인정보동의와 레이아웃같음)</button>
+      <button class="btn-recipe">레시피(하단 버튼 있고 없고차이)</button>
+      <button class="btn-correct-answer">정답입니다.</button>
+      <button class="btn-agree">개인정보동의(투표완료와 레이아웃같음)</button>
+      <button class="btn-false-answer">다시생각해보세요.</button>
     </div>
 
     <!-- 팝업 -->
@@ -256,7 +256,7 @@
       <div class="popup__inner">
         <div class="popup__wrap">
           <div class="close-btn"></div>
-          투표완료
+
         </div>
       </div>
       <div class="dim"></div>
@@ -283,20 +283,22 @@
           <div class="content">
             <div class="video"></div>
             <div class="list">
-              <div class="list-tile"><span>첫번째, </span>잡채 만들기</div>
+              <div class="list-title">[ 첫번째, <span>잡채 만들기</span> ]</div>
               <ul>
-                <li>냄비에 물(700ml), 백설 소불고기양념장을 넣고 끓어오르면 당면을 넣고 11분간 끓인 뒤 건져 물기 제거한다. <br>※ 이 때 참기름을 1T 넣고 끓여주면 당면이 불지 않게 방지해주는 역할을 합니다! </li>
-                <li>사각어묵, 표고버섯, 양파는 채썬 뒤 참기름을 두른 팬에서 각각 볶아 준비한다. <br>
-                  ※ 백설 소불고기 양념장 1.5T~2T를 넣고 볶아주세요!
+                <li><span>냄비에 물(700ml), 백설 소불고기양념장(100ml)을 넣고 끓어오르면 당면을 넣고 11분간 끓인 뒤 건져 물기 제거한다. <br>※ 이 때 참기름을 1T 넣고 끓여주면 당면이 불지 않게 방지해주는 역할을 합니다! </span></li>
+                <li><span>
+                  사각어묵, 표고버섯, 양파는 채썬 뒤 참기름을 두른 팬에서 각각 볶아 준비한다. <br>
+                    ※ 백설 소불고기 양념장 1.5T~2T를 넣고 볶아주세요!
+                </span>
                 </li>
-                <li>시금치는 끓는 물에 살짝 데친 뒤 물기 제거하고 소금(약간), 참기름(1.5T)를 넣고 버무려 준비한다. </li>
-                <li>잡채용 돼지고기는 백설 소불고기양념장(2T)(를 넣고 10분간 재운 뒤 팬에서 볶아 준비한다.</li>
-                <li>넓은 팬에 삶은 당면, 볶은 모든 재료들을 넣고 백설 소불고기양념장(2T), 고소함 가득 참기름(2T), 진간장(2T)를 넣고 볶아준 뒤 통깨를 뿌리면 완성!</li>
+                <li><span>시금치는 끓는 물에 살짝 데친 뒤 물기 제거하고 소금(약간), 참기름(1.5T)를 넣고 버무려 준비한다. </span></li>
+                <li><span>잡채용 돼지고기는 백설 소불고기양념장(2T)(를 넣고 10분간 재운 뒤 팬에서 볶아 준비한다.</span></li>
+                <li><span>넓은 팬에 삶은 당면, 볶은 모든 재료들을 넣고 백설 소불고기양념장(2T), 고소함 가득 참기름(2T), 진간장(2T)를 넣고 볶아준 뒤 통깨를 뿌리면 완성!</span></li>
               </ul>
             </div>
           </div>
           <button class="btn-red">확인</button>
-          <button class="btn-popup-next">Next</button>
+          <button class="btn-popup-next"><span>Next</span></button>
         </div>
       </div>
       <div class="dim"></div>
@@ -307,7 +309,9 @@
       <div class="popup__inner">
         <div class="popup__wrap">
           <div class="close-btn"></div>
-          개인정보 동의
+          <div class="img">!</div>
+          <p>개인정보 미동의 시 이벤트 참여가 불가능합니다. <br>개인정보 수집 및 이용에 동의해주세요.</p>
+          <button class="btn-red">확인</button>
         </div>
       </div>
       <div class="dim"></div>
@@ -318,7 +322,10 @@
       <div class="popup__inner">
         <div class="popup__wrap">
           <div class="close-btn"></div>
-          다시 생각해보세요
+          <div class="img"></div>
+          <strong>다시 생각해보세요</strong>
+          <p>백설 고소함 가득 참기름은 <br>처읍부터 끝까지 고소한 풍미가 가득한 <br><span>저.온.압.착 참기름</span>입니다!</p>
+          <button class="btn-red">확인</button>
         </div>
       </div>
       <div class="dim"></div>

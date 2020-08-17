@@ -15,6 +15,21 @@
       @content;
     }
   }
+  @mixin auto-count($number, $start-number:1, $type:'pc') {
+    &:before {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+    }
+    @for $i from $start-number through $number {
+      &:nth-child(#{$i}) {
+        &:before {
+          content:'#{$i}'
+        }
+      }
+    }
+    @content;
+  }
   @function func_calc($nth, $margin-right) {
     // 전체 길이에서  list-1 만큼 margin-right 곱해서 빼고, 그 값에서 list 나누기
     $nth2: $nth - 1;
@@ -323,7 +338,6 @@
     }
     .event1 {
       .content-wrap {
-        opacity: 0.8;
         .input-area {
           text-align: center;
         }
@@ -826,6 +840,9 @@
     position: fixed;
     bottom: 40px;
     left: 40px;
+    button {
+      padding: 20px;
+    }
   }
   // 팝업
   .popup {
@@ -866,6 +883,7 @@
       background: #fff;
       border-radius: 8px;
       z-index: 100;
+      overflow: hidden;
       .close-btn {
         position: absolute;
         top: 30px;
@@ -873,6 +891,46 @@
         width: 37px;
         height: 37px;
         cursor: pointer;
+      }
+      .btn-red, .btn-popup-next {
+        position: absolute;
+      }
+      .btn-red {
+        bottom: 60px;
+        right:0;
+        left: 0;
+        margin: auto;
+        width: 280px;
+        height: 60px;
+        background: #96120e;
+        color: white;
+        font-size:24px;
+        line-height: 60px;
+      }
+      .btn-popup-next {
+        width: 0;
+        height: 0;
+        border-bottom: 180px solid #96120e;
+        border-left: 180px solid #f1e8e2;
+        right: 0;
+        bottom: 0;
+        font-size: 24px;
+        color: white;
+        span {
+          position: absolute ;
+          bottom: -161px;
+          right: 26px;
+          &:before {
+            position: relative;
+            display: block;
+            top: -7px;
+            width: 49px;
+            height: 16px;
+            background: url('../images/recipe-btn-arrow.png') no-repeat center;
+            background-size: contain;
+            content:'';
+          }
+        }
       }
     }
     .dim {
@@ -890,10 +948,29 @@
         width: 920px;
         height: 853px;
         background: #f1e8e2;
+        .subtitle {
+          margin-top: 50px;
+          font-size: 20px;
+          letter-spacing: 8.4px;
+          text-align: center;
+          color: #c5b8ab;
+        }
+        .title {
+          margin-top: 17px;
+          font-size: 38px;
+          color: #322f30;
+          @include font(serif);
+          span {
+            color: #c93935;
+          }
+        }
+        .content {
+          margin-top: 60px;
+        }
         .video {
           position: relative;
           display: inline-block;
-          margin-left: 40px;
+          margin: 0 40px 0 30px;
           width: 400px;
           height: 500px;
           background: black;
@@ -910,6 +987,100 @@
         .list {
           display: inline-block;
           vertical-align: top;
+          max-width: calc(100% - 485px);
+          text-align: left;
+          .list-title {
+            margin-bottom: 23px;
+            font-size: 25px;
+            color: #703c17;
+            font-weight: 500;
+            span {
+              color: #96120e;
+            }
+          }
+          ul {
+            margin-top: 18px;
+            padding-right: 40px;
+          }
+          li {
+            margin-bottom: 16px;
+            @include auto-count(5, 1);
+            line-height: 1.5;
+            font-weight: 500;
+            &:before {
+              margin-right: 9px;
+              width: 30px;
+              height: 30px;
+              color: white;
+              background: #5d493f;
+              border-radius: 50%;
+              vertical-align: top;
+              line-height: 30px;
+            }
+            span {
+              margin-top: 4px;
+              display: inline-block;
+              vertical-align: top;
+              max-width: calc(100% - 40px);
+            }
+          }
+        }
+        
+      }
+    }
+    &.false-answer {
+      .popup__wrap {
+        width: 480px;
+        height: 650px;
+        .img {
+          display: block;
+          margin: 73px auto 0 auto;
+          width: 121px;
+          height: 172px;
+          background: url('../images/다시생각해보세요팝업제품.png') no-repeat center;
+          background-size: contain;
+        }
+        strong {
+          display: block;
+          margin-top: 32px;
+          font-size: 35px;
+        }
+        p {
+          margin-top: 29px;
+          font-size: 25px;
+          line-height: 1.5;
+          span {
+            color: #bb140f;
+          }
+        }
+        .btn-red {
+          width: 320px;
+          height: 70px;
+          line-height: 70px;
+          bottom: 75px;
+        }
+      }
+    }
+    &.agree {
+      .popup__wrap {
+        width: 720px;
+        height: 510px;
+        .img {
+          display: inline-block;
+          margin-top: 59px;
+          width: 170px;
+          height: 170px;
+          border: 1px solid #c1c1c1;
+          border-radius: 50%;
+          font-size: 120px;
+          line-height: 160px;
+          color: #a70007;
+          font-weight: 600;
+        }
+        p {
+          margin-top: 31px;
+          font-size: 25px;
+          line-height: 1.5;
         }
       }
     }
