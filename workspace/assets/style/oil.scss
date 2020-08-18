@@ -1,17 +1,17 @@
 .oil {
   @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-  @import url(https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/76eb9ebf/stylesheet/NotoSerif-Web.css);
+  // @import url(https://fonts.googleapis.com/css?family=Noto+Serif+KR);
 
   @mixin font($type:'init') {
     @if ($type == 'init') {
       font-family: 'Noto Sans KR', sans-serif;
     }
     @if ($type == 'serif') {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'serif', serif;
     }
   }
   @mixin media-mo() {
-    @media (max-width: 768+'px') {
+    @media (max-width: 767+'px') {
       @content;
     }
   }
@@ -47,6 +47,18 @@
   $right-brown: #e9bc91;
   $brown: #d29467;
   $red: #c93935;
+  .pc-layer {
+    display: block;
+    @include media-mo {
+      display: none;
+    }
+  }
+  .m-layer {
+    display: none;
+    @include media-mo(){
+      display: block;
+    }
+  }
   .color-right-brown {
     color: $right-brown;
   }
@@ -206,6 +218,9 @@
         box-sizing: border-box;
         &.left {
           width: 370px;
+          @include media-mo() {
+            width: auto;
+          }
           margin-right: 22px;
           .img {
             width: 333px;
@@ -216,6 +231,9 @@
         }
         &.right {
           width: 800px;
+          @include media-mo() {
+            width: auto;
+          }
           .one {
             .img {
               margin-top: -20px;
@@ -386,6 +404,9 @@
         width: 540px;
         text-align: center;
         margin-right: 15px;
+        @include media-mo() {
+          width: auto;
+        }
         &:last-child {
           margin-right: 0;
         }
@@ -412,7 +433,7 @@
         .video {
           position: relative;
           margin: 33px auto 0 auto;
-          width: 500px;
+          width: calc(100% - 40px);
           height: 600px;
           background: black;
           cursor: pointer;
@@ -432,6 +453,7 @@
           color: #927f6c;
           span {
             position: relative;
+            font-weight: 500;
             cursor: pointer;
             &:after {
               position: absolute;
@@ -618,12 +640,25 @@
       width: 1200px;
       background: #faf1eb;
       border-radius: 20px;
-      ul {
-        text-align: center;
+      text-align: center;
+      @include media-mo() {
+        width: auto;
       }
-      li {
+      .slick-track {
+        // width: auto!important;
+        // @include media-mo() {
+        //   width: initial!important;
+        // }
+      }
+      .item-content {
         position: relative;
         display: inline-block;
+
+        width: auto!important;
+        @include media-mo() {
+          float:left;
+          // width: inherit!important;
+        }
         &:after {
           position: absolute;
           right: 0;
@@ -633,6 +668,9 @@
           height: 100%;
           background: #d6cec9;
           content:'';
+          @include media-mo(){
+            content: none;
+          }
         }
         &:last-child {
           &:after {
@@ -641,6 +679,10 @@
         }
         &.one {
           padding-right: 61px;
+          margin-left: 60px;
+          @include media-mo(){
+            margin-left: 0;
+          }
           .img {
             width: 322px;
             height: 208px;
@@ -677,27 +719,29 @@
       }
     }
     button {
-      display: block;
-      margin: 61px auto 0 auto;
-      width: 420px;
-      height: 95px;
-      background: #4a2e23;
-      color: white;
-      font-size: 28px;
-      border-radius: 10vw;
-      &:after {
-        display: inline-block;
-        margin-left: 20px;
-        width: 51px;
-        height: 12px;
-        background: url('../images/투표버튼화살표.png') no-repeat center;
-        background-size: contain;
-        vertical-align: middle;
-        content:'';
-      }
-      span {
-        display: inline-block;
-        vertical-align: middle;
+      &.btn-purchase {
+        display: block;
+        margin: 61px auto 0 auto;
+        width: 420px;
+        height: 95px;
+        background: #4a2e23;
+        color: white;
+        font-size: 28px;
+        border-radius: 10vw;
+        &:after {
+          display: inline-block;
+          margin-left: 20px;
+          width: 51px;
+          height: 12px;
+          background: url('../images/투표버튼화살표.png') no-repeat center;
+          background-size: contain;
+          vertical-align: middle;
+          content:'';
+        }
+        span {
+          display: inline-block;
+          vertical-align: middle;
+        }
       }
     }
   }
@@ -841,7 +885,8 @@
     bottom: 40px;
     left: 40px;
     button {
-      padding: 20px;
+      padding: 4px 8px;
+      font-size: 14px;
     }
   }
   // 팝업

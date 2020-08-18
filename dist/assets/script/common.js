@@ -27,3 +27,19 @@ showpopup('.btn-false-answer', '.false-answer');
 // $('.wrapper').click(function(){
 //   console.log('바디클릭');
 // })
+
+$(".gift-set .item-wrap").slick({
+  dots: false,
+  infinite: false,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slideToScroll: 1,
+        slidesToShow: 1,
+        infinite: true,
+      }
+    },
+  ]
+});
