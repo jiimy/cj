@@ -1086,3 +1086,9 @@
     }
   }
 }
+
+body {
+  &.is-overflow {
+    overflow: hidden;
+  }
+}

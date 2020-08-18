@@ -1,12 +1,14 @@
 function showpopup(openBtn, popup){
   $(openBtn).click(function(){
     $(popup).addClass('block');
+    $('body').addClass('is-overflow');
   })
 }
 
 function closepopup(closeBtn){
   $(closeBtn).click(function(){
     $(this).closest('.popup').removeClass('block');
+    $('body').removeClass('is-overflow');
   })
 }
 
