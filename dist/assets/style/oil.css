@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-@import url(https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/76eb9ebf/stylesheet/NotoSerif-Web.css);
 .oil { position: relative; }
 
 .oil .pc-layer { display: block; }
@@ -27,11 +26,11 @@
 
 .oil .header .title-desc, .oil .header .big-title { color: #d29467; }
 
-.oil .header .title-desc { position: absolute; top: 54.3%; left: 34.7%; font-size: 31px; font-family: 'Noto Serif KR', serif; line-height: 1.48; }
+.oil .header .title-desc { position: absolute; top: 54.3%; left: 34.7%; font-size: 31px; font-family: 'serif', serif; line-height: 1.48; }
 
-.oil .header .sub-desc { position: absolute; top: 66.2%; left: 34.7%; font-size: 19px; color: rgba(199, 171, 151, 0.63); font-family: 'Noto Serif KR', serif; line-height: 2; }
+.oil .header .sub-desc { position: absolute; top: 66.2%; left: 34.7%; font-size: 19px; color: rgba(199, 171, 151, 0.63); font-family: 'serif', serif; line-height: 2; }
 
-.oil .header .big-title { position: absolute; top: 192px; right: 155px; font-size: 68px; font-family: 'Noto Serif KR', serif; }
+.oil .header .big-title { position: absolute; top: 192px; right: 155px; font-size: 68px; font-family: 'serif', serif; }
 
 .oil .header .big-title:before { position: absolute; width: 94px; height: 84px; top: -112px; left: 32px; background: url("../images/헤더로고.png") no-repeat center; background-size: contain; content: ''; }
 
@@ -49,13 +48,13 @@
 
 .oil .special-event .title-area .title-header { height: 60px; font-size: 29px; color: #96120e; background: url("../images/스페셜타이틀이미지.png") no-repeat center; line-height: 60px; }
 
-.oil .special-event .title-area .title { margin-top: 58px; font-size: 46px; color: #431715; font-family: 'Noto Serif KR', serif; }
+.oil .special-event .title-area .title { margin-top: 58px; font-size: 46px; color: #431715; font-family: 'serif', serif; }
 
 .oil .special-event .title-area .title strong { display: block; margin-top: 31px; color: #904514; font-size: 75.5px; font-family: 'Noto Sans KR', sans-serif; }
 
 .oil .special-event .title-area .title strong span { color: #97110d; }
 
-.oil .special-event .desc { margin-top: 49px; color: #3d1614; font-size: 22px; font-family: 'Noto Serif KR', serif; line-height: 1.64; }
+.oil .special-event .desc { margin-top: 49px; color: #3d1614; font-size: 22px; font-family: 'serif', serif; line-height: 1.64; }
 
 .oil .special-event .date { margin-top: 94px; text-align: center; }
 
@@ -109,7 +108,7 @@
 
 .oil .event .title, .oil .event .desc { text-align: center; }
 
-.oil .event .title { margin-top: 53px; font-size: 70px; color: #d29467; font-family: 'Noto Serif KR', serif; }
+.oil .event .title { margin-top: 53px; font-size: 70px; color: #d29467; font-family: 'serif', serif; }
 
 .oil .event .desc { margin-top: 29px; font-size: 24px; color: #8c6663; line-height: 1.5; }
 
@@ -137,7 +136,7 @@
 
 .oil .event .event2 .card__subtitle { font-size: 20px; letter-spacing: 8.4px; text-align: center; color: #c5b8ab; }
 
-.oil .event .event2 .card__title { margin-top: 16px; font-size: 34px; color: #322f30; font-family: 'Noto Serif KR', serif; }
+.oil .event .event2 .card__title { margin-top: 16px; font-size: 34px; color: #322f30; font-family: 'serif', serif; }
 
 .oil .event .event2 .card .video { position: relative; margin: 33px auto 0 auto; width: calc(100% - 40px); height: 600px; background: black; cursor: pointer; }
 
@@ -145,7 +144,7 @@
 
 .oil .event .event2 .card .detail { margin: 10px 45px 0 0; text-align: right; font-size: 20px; color: #927f6c; }
 
-.oil .event .event2 .card .detail span { position: relative; cursor: pointer; }
+.oil .event .event2 .card .detail span { position: relative; font-weight: 500; cursor: pointer; }
 
 .oil .event .event2 .card .detail span:after { position: absolute; left: 0; bottom: 2px; width: 100%; height: 1px; background: #927f6c; content: ''; }
 
@@ -199,7 +198,7 @@
 
 .oil .gift-set .title-img:before { display: block; margin: 0 auto; margin-bottom: 12px; width: 141px; height: 29px; background: url("../images/gift-set-title.png") no-repeat center; background-size: contain; content: ''; }
 
-.oil .gift-set .title { margin-top: 54px; font-size: 70px; color: #4a2e23; text-align: center; font-family: 'Noto Serif KR', serif; }
+.oil .gift-set .title { margin-top: 54px; font-size: 70px; color: #4a2e23; text-align: center; font-family: 'serif', serif; }
 
 .oil .gift-set .desc { margin-top: 29px; font-size: 24px; line-height: 1.5; text-align: center; color: #5d493f; }
 
@@ -241,7 +240,7 @@
 
 .oil .link-area { padding-top: 92px; padding-bottom: 111px; background: #e1cdc2; text-align: center; }
 
-.oil .link-area .title { color: #4a2e23; font-size: 44px; font-family: 'Noto Serif KR', serif; line-height: 1.39; }
+.oil .link-area .title { color: #4a2e23; font-size: 44px; font-family: 'serif', serif; line-height: 1.39; }
 
 .oil .link-area .link-wrap { margin-top: 71px; }
 
@@ -321,7 +320,7 @@
 
 .oil .popup.recipe .popup__wrap .subtitle { margin-top: 50px; font-size: 20px; letter-spacing: 8.4px; text-align: center; color: #c5b8ab; }
 
-.oil .popup.recipe .popup__wrap .title { margin-top: 17px; font-size: 38px; color: #322f30; font-family: 'Noto Serif KR', serif; }
+.oil .popup.recipe .popup__wrap .title { margin-top: 17px; font-size: 38px; color: #322f30; font-family: 'serif', serif; }
 
 .oil .popup.recipe .popup__wrap .title span { color: #c93935; }
 

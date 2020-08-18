@@ -1,13 +1,13 @@
 .oil {
   @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-  @import url(https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/76eb9ebf/stylesheet/NotoSerif-Web.css);
+  // @import url(https://fonts.googleapis.com/css?family=Noto+Serif+KR);
 
   @mixin font($type:'init') {
     @if ($type == 'init') {
       font-family: 'Noto Sans KR', sans-serif;
     }
     @if ($type == 'serif') {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'serif', serif;
     }
   }
   @mixin media-mo() {
@@ -453,6 +453,7 @@
           color: #927f6c;
           span {
             position: relative;
+            font-weight: 500;
             cursor: pointer;
             &:after {
               position: absolute;
