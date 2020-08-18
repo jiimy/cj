@@ -1,4 +1,4 @@
-$(".gift-set .item-wrap").slick({
+$(".gift-set .item-wrap.m-layer").slick({
   dots: false,
   infinite: false,
   arrows: false,

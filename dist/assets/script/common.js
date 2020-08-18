@@ -28,7 +28,7 @@ showpopup('.btn-false-answer', '.false-answer');
 //   console.log('바디클릭');
 // })
 
-$(".gift-set .item-wrap").slick({
+$(".gift-set .item-wrap.m-layer").slick({
   dots: false,
   infinite: false,
   arrows: false,
