@@ -47,6 +47,18 @@
   $right-brown: #e9bc91;
   $brown: #d29467;
   $red: #c93935;
+  .pc-layer {
+    display: block;
+    @include media-mo {
+      display: none;
+    }
+  }
+  .m-layer {
+    display: none;
+    @include media-mo(){
+      display: block;
+    }
+  }
   .color-right-brown {
     color: $right-brown;
   }
@@ -618,12 +630,25 @@
       width: 1200px;
       background: #faf1eb;
       border-radius: 20px;
-      ul {
-        text-align: center;
+      text-align: center;
+      @include media-mo() {
+        width: auto;
       }
-      li {
+      .slick-track {
+        // width: auto!important;
+        // @include media-mo() {
+        //   width: initial!important;
+        // }
+      }
+      .item-content {
         position: relative;
         display: inline-block;
+
+        width: auto!important;
+        @include media-mo() {
+          float:left;
+          width: inherit!important;
+        }
         &:after {
           position: absolute;
           right: 0;
@@ -641,6 +666,10 @@
         }
         &.one {
           padding-right: 61px;
+          margin-left: 60px;
+          @include media-mo(){
+            margin-left: 0;
+          }
           .img {
             width: 322px;
             height: 208px;
@@ -677,27 +706,29 @@
       }
     }
     button {
-      display: block;
-      margin: 61px auto 0 auto;
-      width: 420px;
-      height: 95px;
-      background: #4a2e23;
-      color: white;
-      font-size: 28px;
-      border-radius: 10vw;
-      &:after {
-        display: inline-block;
-        margin-left: 20px;
-        width: 51px;
-        height: 12px;
-        background: url('../images/투표버튼화살표.png') no-repeat center;
-        background-size: contain;
-        vertical-align: middle;
-        content:'';
-      }
-      span {
-        display: inline-block;
-        vertical-align: middle;
+      &.btn-purchase {
+        display: block;
+        margin: 61px auto 0 auto;
+        width: 420px;
+        height: 95px;
+        background: #4a2e23;
+        color: white;
+        font-size: 28px;
+        border-radius: 10vw;
+        &:after {
+          display: inline-block;
+          margin-left: 20px;
+          width: 51px;
+          height: 12px;
+          background: url('../images/투표버튼화살표.png') no-repeat center;
+          background-size: contain;
+          vertical-align: middle;
+          content:'';
+        }
+        span {
+          display: inline-block;
+          vertical-align: middle;
+        }
       }
     }
   }

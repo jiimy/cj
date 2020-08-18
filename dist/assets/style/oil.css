@@ -3,6 +3,14 @@
 @import url(https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/76eb9ebf/stylesheet/NotoSerif-Web.css);
 .oil { position: relative; }
 
+.oil .pc-layer { display: block; }
+
+@media (max-width: 768px) { .oil .pc-layer { display: none; } }
+
+.oil .m-layer { display: none; }
+
+@media (max-width: 768px) { .oil .m-layer { display: block; } }
+
 .oil .color-right-brown { color: #e9bc91; }
 
 .oil .color-brown { color: #d29467; }
@@ -189,35 +197,39 @@
 
 .oil .gift-set .desc { margin-top: 29px; font-size: 24px; line-height: 1.5; text-align: center; color: #5d493f; }
 
-.oil .gift-set .item-wrap { margin-top: 53px; padding-top: 60px; padding-bottom: 53px; width: 1200px; background: #faf1eb; border-radius: 20px; }
+.oil .gift-set .item-wrap { margin-top: 53px; padding-top: 60px; padding-bottom: 53px; width: 1200px; background: #faf1eb; border-radius: 20px; text-align: center; }
 
-.oil .gift-set .item-wrap ul { text-align: center; }
+@media (max-width: 768px) { .oil .gift-set .item-wrap { width: auto; } }
 
-.oil .gift-set .item-wrap li { position: relative; display: inline-block; }
+.oil .gift-set .item-wrap .item-content { position: relative; display: inline-block; width: auto !important; }
 
-.oil .gift-set .item-wrap li:after { position: absolute; right: 0; top: 0; bottom: 0; width: 1px; height: 100%; background: #d6cec9; content: ''; }
+@media (max-width: 768px) { .oil .gift-set .item-wrap .item-content { float: left; width: inherit !important; } }
 
-.oil .gift-set .item-wrap li:last-child:after { content: none; }
+.oil .gift-set .item-wrap .item-content:after { position: absolute; right: 0; top: 0; bottom: 0; width: 1px; height: 100%; background: #d6cec9; content: ''; }
 
-.oil .gift-set .item-wrap li.one { padding-right: 61px; }
+.oil .gift-set .item-wrap .item-content:last-child:after { content: none; }
 
-.oil .gift-set .item-wrap li.one .img { width: 322px; height: 208px; background: url("../images/참기름1.png") no-repeat center; background-size: contain; }
+.oil .gift-set .item-wrap .item-content.one { padding-right: 61px; margin-left: 60px; }
 
-.oil .gift-set .item-wrap li.two { margin: 0 50px 0 54px; padding-right: 55px; }
+@media (max-width: 768px) { .oil .gift-set .item-wrap .item-content.one { margin-left: 0; } }
 
-.oil .gift-set .item-wrap li.two .img { width: 194px; height: 228px; background: url("../images/참기름2.png") no-repeat center; background-size: contain; }
+.oil .gift-set .item-wrap .item-content.one .img { width: 322px; height: 208px; background: url("../images/참기름1.png") no-repeat center; background-size: contain; }
 
-.oil .gift-set .item-wrap li.three .img { width: 336px; height: 202px; background: url("../images/참기름3.png") no-repeat center; background-size: contain; }
+.oil .gift-set .item-wrap .item-content.two { margin: 0 50px 0 54px; padding-right: 55px; }
 
-.oil .gift-set .item-wrap li p { margin-top: 45px; font-size: 19px; }
+.oil .gift-set .item-wrap .item-content.two .img { width: 194px; height: 228px; background: url("../images/참기름2.png") no-repeat center; background-size: contain; }
 
-.oil .gift-set .item-wrap li p strong { display: block; margin-bottom: 6px; }
+.oil .gift-set .item-wrap .item-content.three .img { width: 336px; height: 202px; background: url("../images/참기름3.png") no-repeat center; background-size: contain; }
 
-.oil .gift-set button { display: block; margin: 61px auto 0 auto; width: 420px; height: 95px; background: #4a2e23; color: white; font-size: 28px; border-radius: 10vw; }
+.oil .gift-set .item-wrap .item-content p { margin-top: 45px; font-size: 19px; }
 
-.oil .gift-set button:after { display: inline-block; margin-left: 20px; width: 51px; height: 12px; background: url("../images/투표버튼화살표.png") no-repeat center; background-size: contain; vertical-align: middle; content: ''; }
+.oil .gift-set .item-wrap .item-content p strong { display: block; margin-bottom: 6px; }
 
-.oil .gift-set button span { display: inline-block; vertical-align: middle; }
+.oil .gift-set button.btn-purchase { display: block; margin: 61px auto 0 auto; width: 420px; height: 95px; background: #4a2e23; color: white; font-size: 28px; border-radius: 10vw; }
+
+.oil .gift-set button.btn-purchase:after { display: inline-block; margin-left: 20px; width: 51px; height: 12px; background: url("../images/투표버튼화살표.png") no-repeat center; background-size: contain; vertical-align: middle; content: ''; }
+
+.oil .gift-set button.btn-purchase span { display: inline-block; vertical-align: middle; }
 
 .oil .link-area { padding-top: 92px; padding-bottom: 111px; background: #e1cdc2; text-align: center; }
 
