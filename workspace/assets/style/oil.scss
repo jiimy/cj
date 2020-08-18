@@ -180,8 +180,10 @@
       margin-top: 49px;
       color: #3d1614;
       font-size: 22px;
+      letter-spacing: -0.25;
       @include font(serif);
       line-height: 1.64;
+      font-weight: 500;
     }
     .date {
       margin-top: 94px;
@@ -218,14 +220,24 @@
         border: solid 1px #8c6350;
         box-sizing: border-box;
         &.left {
+          position: relative;
           width: 370px;
+          margin-right: 22px;
           @include media-mo() {
             width: auto;
           }
-          margin-right: 22px;
+          li {
+            width: 100%;
+          }
+          .text {
+            top: 84%;
+          }
           .img {
-            width: 333px;
-            height: 224px;
+            position: absolute;
+            top: -50px;
+            left: -44px;
+            width: 399px;
+            height: 271px;
             background: url('#{$img-root}스페셜아이템1.png') no-repeat center;
             background-size: contain;
           }

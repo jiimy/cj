@@ -54,7 +54,7 @@
 
 .oil .special-event .title-area .title strong span { color: #97110d; }
 
-.oil .special-event .desc { margin-top: 49px; color: #3d1614; font-size: 22px; font-family: 'serif', serif; line-height: 1.64; }
+.oil .special-event .desc { margin-top: 49px; color: #3d1614; font-size: 22px; letter-spacing: -0.25; font-family: 'serif', serif; line-height: 1.64; font-weight: 500; }
 
 .oil .special-event .date { margin-top: 94px; text-align: center; }
 
@@ -66,11 +66,15 @@
 
 .oil .special-event .card-wrap .card { position: relative; display: inline-block; margin-top: 133px; height: 431px; padding: 50px 0px 0px 0px; vertical-align: top; text-align: center; border: solid 1px #8c6350; box-sizing: border-box; }
 
-.oil .special-event .card-wrap .card.left { width: 370px; margin-right: 22px; }
+.oil .special-event .card-wrap .card.left { position: relative; width: 370px; margin-right: 22px; }
 
 @media (max-width: 767px) { .oil .special-event .card-wrap .card.left { width: auto; } }
 
-.oil .special-event .card-wrap .card.left .img { width: 333px; height: 224px; background: url("../images/스페셜아이템1.png") no-repeat center; background-size: contain; }
+.oil .special-event .card-wrap .card.left li { width: 100%; }
+
+.oil .special-event .card-wrap .card.left .text { top: 84%; }
+
+.oil .special-event .card-wrap .card.left .img { position: absolute; top: -50px; left: -44px; width: 399px; height: 271px; background: url("../images/스페셜아이템1.png") no-repeat center; background-size: contain; }
 
 .oil .special-event .card-wrap .card.right { width: 800px; }
 
