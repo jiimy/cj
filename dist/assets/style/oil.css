@@ -69,9 +69,13 @@
 
 .oil .special-event .card-wrap .card.left { width: 370px; margin-right: 22px; }
 
+@media (max-width: 768px) { .oil .special-event .card-wrap .card.left { width: auto; } }
+
 .oil .special-event .card-wrap .card.left .img { width: 333px; height: 224px; background: url("../images/스페셜아이템1.png") no-repeat center; background-size: contain; }
 
 .oil .special-event .card-wrap .card.right { width: 800px; }
+
+@media (max-width: 768px) { .oil .special-event .card-wrap .card.right { width: auto; } }
 
 .oil .special-event .card-wrap .card.right .one .img { margin-top: -20px; width: 143px; height: 257px; background: url("../images/스페셜아이템2.png") no-repeat center; background-size: contain; }
 
@@ -125,6 +129,8 @@
 
 .oil .event .event2 .card { display: inline-block; width: 540px; text-align: center; margin-right: 15px; }
 
+@media (max-width: 768px) { .oil .event .event2 .card { width: auto; } }
+
 .oil .event .event2 .card:last-child { margin-right: 0; }
 
 .oil .event .event2 .card__inner { margin-bottom: 30px; padding-top: 44px; padding-bottom: 47px; border-radius: 20px; box-shadow: 6.5px 11.3px 9px 0 rgba(122, 111, 98, 0.22); background-color: #f1e8e2; }
@@ -133,7 +139,7 @@
 
 .oil .event .event2 .card__title { margin-top: 16px; font-size: 34px; color: #322f30; font-family: 'Noto Serif KR', serif; }
 
-.oil .event .event2 .card .video { position: relative; margin: 33px auto 0 auto; width: 500px; height: 600px; background: black; cursor: pointer; }
+.oil .event .event2 .card .video { position: relative; margin: 33px auto 0 auto; width: calc(100% - 40px); height: 600px; background: black; cursor: pointer; }
 
 .oil .event .event2 .card .video:before { position: absolute; right: 0; left: 0; top: 0; bottom: 0; margin: auto; width: 112px; height: 112px; background: url("../images/영상플레이버튼.png") no-repeat center; background-size: contain; content: ''; }
 
@@ -203,9 +209,11 @@
 
 .oil .gift-set .item-wrap .item-content { position: relative; display: inline-block; width: auto !important; }
 
-@media (max-width: 768px) { .oil .gift-set .item-wrap .item-content { float: left; width: inherit !important; } }
+@media (max-width: 768px) { .oil .gift-set .item-wrap .item-content { float: left; } }
 
 .oil .gift-set .item-wrap .item-content:after { position: absolute; right: 0; top: 0; bottom: 0; width: 1px; height: 100%; background: #d6cec9; content: ''; }
+
+@media (max-width: 768px) { .oil .gift-set .item-wrap .item-content:after { content: none; } }
 
 .oil .gift-set .item-wrap .item-content:last-child:after { content: none; }
 
@@ -279,7 +287,7 @@
 
 .oil .popup-btns { position: fixed; bottom: 40px; left: 40px; }
 
-.oil .popup-btns button { padding: 20px; }
+.oil .popup-btns button { padding: 4px 8px; font-size: 14px; }
 
 .oil .popup { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
 

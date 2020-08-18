@@ -39,8 +39,6 @@ $(".gift-set .item-wrap").slick({
         slideToScroll: 1,
         slidesToShow: 1,
         infinite: true,
-        dots: true,
-        infinite: true
       }
     },
   ]

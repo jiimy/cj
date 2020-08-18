@@ -218,6 +218,9 @@
         box-sizing: border-box;
         &.left {
           width: 370px;
+          @include media-mo() {
+            width: auto;
+          }
           margin-right: 22px;
           .img {
             width: 333px;
@@ -228,6 +231,9 @@
         }
         &.right {
           width: 800px;
+          @include media-mo() {
+            width: auto;
+          }
           .one {
             .img {
               margin-top: -20px;
@@ -398,6 +404,9 @@
         width: 540px;
         text-align: center;
         margin-right: 15px;
+        @include media-mo() {
+          width: auto;
+        }
         &:last-child {
           margin-right: 0;
         }
@@ -424,7 +433,7 @@
         .video {
           position: relative;
           margin: 33px auto 0 auto;
-          width: 500px;
+          width: calc(100% - 40px);
           height: 600px;
           background: black;
           cursor: pointer;
@@ -647,7 +656,7 @@
         width: auto!important;
         @include media-mo() {
           float:left;
-          width: inherit!important;
+          // width: inherit!important;
         }
         &:after {
           position: absolute;
@@ -658,6 +667,9 @@
           height: 100%;
           background: #d6cec9;
           content:'';
+          @include media-mo(){
+            content: none;
+          }
         }
         &:last-child {
           &:after {
@@ -872,7 +884,8 @@
     bottom: 40px;
     left: 40px;
     button {
-      padding: 20px;
+      padding: 4px 8px;
+      font-size: 14px;
     }
   }
   // 팝업
