@@ -5,11 +5,11 @@
 
 .oil .pc-layer { display: block; }
 
-@media (max-width: 768px) { .oil .pc-layer { display: none; } }
+@media (max-width: 767px) { .oil .pc-layer { display: none; } }
 
 .oil .m-layer { display: none; }
 
-@media (max-width: 768px) { .oil .m-layer { display: block; } }
+@media (max-width: 767px) { .oil .m-layer { display: block; } }
 
 .oil .color-right-brown { color: #e9bc91; }
 
@@ -69,13 +69,13 @@
 
 .oil .special-event .card-wrap .card.left { width: 370px; margin-right: 22px; }
 
-@media (max-width: 768px) { .oil .special-event .card-wrap .card.left { width: auto; } }
+@media (max-width: 767px) { .oil .special-event .card-wrap .card.left { width: auto; } }
 
 .oil .special-event .card-wrap .card.left .img { width: 333px; height: 224px; background: url("../images/스페셜아이템1.png") no-repeat center; background-size: contain; }
 
 .oil .special-event .card-wrap .card.right { width: 800px; }
 
-@media (max-width: 768px) { .oil .special-event .card-wrap .card.right { width: auto; } }
+@media (max-width: 767px) { .oil .special-event .card-wrap .card.right { width: auto; } }
 
 .oil .special-event .card-wrap .card.right .one .img { margin-top: -20px; width: 143px; height: 257px; background: url("../images/스페셜아이템2.png") no-repeat center; background-size: contain; }
 
@@ -129,7 +129,7 @@
 
 .oil .event .event2 .card { display: inline-block; width: 540px; text-align: center; margin-right: 15px; }
 
-@media (max-width: 768px) { .oil .event .event2 .card { width: auto; } }
+@media (max-width: 767px) { .oil .event .event2 .card { width: auto; } }
 
 .oil .event .event2 .card:last-child { margin-right: 0; }
 
@@ -205,21 +205,21 @@
 
 .oil .gift-set .item-wrap { margin-top: 53px; padding-top: 60px; padding-bottom: 53px; width: 1200px; background: #faf1eb; border-radius: 20px; text-align: center; }
 
-@media (max-width: 768px) { .oil .gift-set .item-wrap { width: auto; } }
+@media (max-width: 767px) { .oil .gift-set .item-wrap { width: auto; } }
 
 .oil .gift-set .item-wrap .item-content { position: relative; display: inline-block; width: auto !important; }
 
-@media (max-width: 768px) { .oil .gift-set .item-wrap .item-content { float: left; } }
+@media (max-width: 767px) { .oil .gift-set .item-wrap .item-content { float: left; } }
 
 .oil .gift-set .item-wrap .item-content:after { position: absolute; right: 0; top: 0; bottom: 0; width: 1px; height: 100%; background: #d6cec9; content: ''; }
 
-@media (max-width: 768px) { .oil .gift-set .item-wrap .item-content:after { content: none; } }
+@media (max-width: 767px) { .oil .gift-set .item-wrap .item-content:after { content: none; } }
 
 .oil .gift-set .item-wrap .item-content:last-child:after { content: none; }
 
 .oil .gift-set .item-wrap .item-content.one { padding-right: 61px; margin-left: 60px; }
 
-@media (max-width: 768px) { .oil .gift-set .item-wrap .item-content.one { margin-left: 0; } }
+@media (max-width: 767px) { .oil .gift-set .item-wrap .item-content.one { margin-left: 0; } }
 
 .oil .gift-set .item-wrap .item-content.one .img { width: 322px; height: 208px; background: url("../images/참기름1.png") no-repeat center; background-size: contain; }
 
