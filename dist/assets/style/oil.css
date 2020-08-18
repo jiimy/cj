@@ -1,0 +1,356 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/76eb9ebf/stylesheet/NotoSerif-Web.css);
+.oil { position: relative; }
+
+.oil .color-right-brown { color: #e9bc91; }
+
+.oil .color-brown { color: #d29467; }
+
+.oil .color-red { color: #c93935; }
+
+.oil > * { font-family: 'Noto Sans KR', sans-serif; }
+
+.oil .wrapper { margin: 0 auto; max-width: 1200px; height: 100%; }
+
+.oil .header { position: relative; height: 880px; background: url("../images/kv-bg.png") no-repeat center top; background-size: cover; }
+
+.oil .header .wrapper { position: relative; }
+
+.oil .header .title-desc, .oil .header .big-title { color: #d29467; }
+
+.oil .header .title-desc { position: absolute; top: 54.3%; left: 34.7%; font-size: 31px; font-family: 'Noto Serif KR', serif; line-height: 1.48; }
+
+.oil .header .sub-desc { position: absolute; top: 66.2%; left: 34.7%; font-size: 19px; color: rgba(199, 171, 151, 0.63); font-family: 'Noto Serif KR', serif; line-height: 2; }
+
+.oil .header .big-title { position: absolute; top: 192px; right: 155px; font-size: 68px; font-family: 'Noto Serif KR', serif; }
+
+.oil .header .big-title:before { position: absolute; width: 94px; height: 84px; top: -112px; left: 32px; background: url("../images/헤더로고.png") no-repeat center; background-size: contain; content: ''; }
+
+.oil .header .big-title strong { position: relative; display: inline-block; margin-bottom: 20px; left: -7px; font-size: 89px; font-weight: 500; }
+
+.oil .header .big-title .left, .oil .header .big-title .right { display: inline-block; vertical-align: top; }
+
+.oil .header .big-title .left { width: 63px; }
+
+.oil .header .big-title .right { width: 27px; margin-top: -15px; }
+
+.oil .special-event { padding: 112px 0 110px 0; background: #e2cdc3; }
+
+.oil .special-event .title-header, .oil .special-event .title, .oil .special-event .desc { text-align: center; }
+
+.oil .special-event .title-area .title-header { height: 60px; font-size: 29px; color: #96120e; background: url("../images/스페셜타이틀이미지.png") no-repeat center; line-height: 60px; }
+
+.oil .special-event .title-area .title { margin-top: 58px; font-size: 46px; color: #431715; font-family: 'Noto Serif KR', serif; }
+
+.oil .special-event .title-area .title strong { display: block; margin-top: 31px; color: #904514; font-size: 75.5px; font-family: 'Noto Sans KR', sans-serif; }
+
+.oil .special-event .title-area .title strong span { color: #97110d; }
+
+.oil .special-event .desc { margin-top: 49px; color: #3d1614; font-size: 22px; font-family: 'Noto Serif KR', serif; line-height: 1.64; }
+
+.oil .special-event .date { margin-top: 94px; text-align: center; }
+
+.oil .special-event .date li { display: inline-block; font-size: 26.5px; }
+
+.oil .special-event .date li:last-child { margin-left: 73px; }
+
+.oil .special-event .date span { display: inline-block; width: 215px; height: 48px; line-height: 46px; background: #96120e; border-radius: 10vw; font-size: 25.5px; text-align: center; color: #efd1c2; }
+
+.oil .special-event .card-wrap .card { position: relative; display: inline-block; margin-top: 133px; height: 431px; padding: 50px 0px 0px 0px; vertical-align: top; text-align: center; border: solid 1px #8c6350; box-sizing: border-box; }
+
+.oil .special-event .card-wrap .card.left { width: 370px; margin-right: 22px; }
+
+.oil .special-event .card-wrap .card.left .img { width: 333px; height: 224px; background: url("../images/스페셜아이템1.png") no-repeat center; background-size: contain; }
+
+.oil .special-event .card-wrap .card.right { width: 800px; }
+
+.oil .special-event .card-wrap .card.right .one .img { margin-top: -20px; width: 143px; height: 257px; background: url("../images/스페셜아이템2.png") no-repeat center; background-size: contain; }
+
+.oil .special-event .card-wrap .card.right .two .img { margin-top: 50px; width: 235px; height: 145px; background: url("../images/스페셜아이템3.png") no-repeat center; background-size: contain; }
+
+.oil .special-event .card-wrap .card.right .three .img { width: 214px; height: 219px; background: url("../images/스페셜아이템4.png") no-repeat center; background-size: contain; }
+
+.oil .special-event .card-wrap .card .title { position: relative; display: inline-block; top: -65px; margin: auto; font-size: 27px; color: #754935; font-weight: 600; }
+
+.oil .special-event .card-wrap .card .title:after { position: absolute; width: calc(100% + 20px); height: 100%; left: -10px; background: #e2cdc3; z-index: 1; content: ''; }
+
+.oil .special-event .card-wrap .card .title span { position: relative; z-index: 2; }
+
+.oil .special-event .card-wrap .card ul li { position: relative; display: inline-block; height: 298px; margin-right: 39px; vertical-align: middle; }
+
+.oil .special-event .card-wrap .card ul li:last-child { margin-right: 0; }
+
+.oil .special-event .card-wrap .card ul li .two .img { margin-top: 60px; }
+
+.oil .special-event .card-wrap .card p { position: absolute; top: 86%; right: 0; left: 0; text-align: center; font-size: 19px; }
+
+.oil .special-event .card-wrap .card p strong { display: block; margin-bottom: 6px; }
+
+.oil .special-event .card-wrap .card p span { display: block; color: #a76c51; }
+
+.oil .event { padding: 110px 0 104px 0; background: #181212; }
+
+.oil .event .title-img { text-align: center; font-size: 17px; color: #f1e8e2; }
+
+.oil .event .title-img:before { display: block; margin: 0 auto 11px auto; width: 141px; height: 29px; background: url("../images/event-title.png") no-repeat center; background-size: contain; content: ''; }
+
+.oil .event .title, .oil .event .desc { text-align: center; }
+
+.oil .event .title { margin-top: 53px; font-size: 70px; color: #d29467; font-family: 'Noto Serif KR', serif; }
+
+.oil .event .desc { margin-top: 29px; font-size: 24px; color: #8c6663; line-height: 1.5; }
+
+.oil .event .event1 .content-wrap .input-area { text-align: center; }
+
+.oil .event .event1 .content-wrap input { display: inline-block; margin-right: 5px; padding-left: 10px; width: 170px; height: 200px; border-radius: 20px; background: #f1e8e2; font-size: 160px; box-sizing: border-box; font-weight: 600; }
+
+.oil .event .event1 .content-wrap input:last-child { margin-right: 0; }
+
+.oil .event .event1 .content-wrap input::placeholder { color: #ccc4bf; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; }
+
+.oil .event .event1 button { display: block; margin: 76px auto 0 auto; min-width: 420px; height: 95px; background: #96120e; border-radius: 10vw; color: white; font-size: 28px; }
+
+.oil .event .event2 { margin-top: 130px; }
+
+.oil .event .event2 .content-wrap { margin-top: 70px; padding-top: 80px; text-align: center; }
+
+.oil .event .event2 .card { display: inline-block; width: 540px; text-align: center; margin-right: 15px; }
+
+.oil .event .event2 .card:last-child { margin-right: 0; }
+
+.oil .event .event2 .card__inner { margin-bottom: 30px; padding-top: 44px; padding-bottom: 47px; border-radius: 20px; box-shadow: 6.5px 11.3px 9px 0 rgba(122, 111, 98, 0.22); background-color: #f1e8e2; }
+
+.oil .event .event2 .card__subtitle { font-size: 20px; letter-spacing: 8.4px; text-align: center; color: #c5b8ab; }
+
+.oil .event .event2 .card__title { margin-top: 16px; font-size: 34px; color: #322f30; font-family: 'Noto Serif KR', serif; }
+
+.oil .event .event2 .card .video { position: relative; margin: 33px auto 0 auto; width: 500px; height: 600px; background: black; cursor: pointer; }
+
+.oil .event .event2 .card .video:before { position: absolute; right: 0; left: 0; top: 0; bottom: 0; margin: auto; width: 112px; height: 112px; background: url("../images/영상플레이버튼.png") no-repeat center; background-size: contain; content: ''; }
+
+.oil .event .event2 .card .detail { margin: 10px 45px 0 0; text-align: right; font-size: 20px; color: #927f6c; }
+
+.oil .event .event2 .card .detail span { position: relative; cursor: pointer; }
+
+.oil .event .event2 .card .detail span:after { position: absolute; left: 0; bottom: 2px; width: 100%; height: 1px; background: #927f6c; content: ''; }
+
+.oil .event .event2 .card .vote-btn { margin-top: 38px; width: 420px; height: 95px; border-radius: 10vw; font-size: 28px; color: white; background-color: #96120e; }
+
+.oil .event .event2 .card .vote-btn:before { display: inline-block; margin-right: 10px; width: 61px; height: 61px; vertical-align: middle; background-size: contain; background: url("../images/선택되지않은하트.png") no-repeat center; content: ''; }
+
+.oil .event .event2 .card .vote-btn.is-on:before { background: url("../images/선택된하트.png") no-repeat center; }
+
+.oil .event .event2 .card .vote-btn:after { display: inline-block; margin-left: 4px; width: 52px; height: 12px; background: url("../images/투표버튼화살표.png") no-repeat center; background-size: contain; vertical-align: middle; content: ''; }
+
+.oil .event .event2 .card .vote-btn span { display: inline-block; vertical-align: middle; }
+
+.oil .event .event2 .card .video-btn { display: inline-block; width: 240px; height: 60px; line-height: 56px; text-align: center; color: white; font-size: 20px; border-radius: 10vw; }
+
+.oil .event .event2 .card .video-btn:after { display: inline-block; margin-left: 8px; vertical-align: middle; content: ''; }
+
+.oil .event .event2 .card .video-btn span { display: inline-block; vertical-align: middle; }
+
+.oil .event .event2 .card .video-btn.video1 { background: #52362b; margin-right: 18px; }
+
+.oil .event .event2 .card .video-btn.video1:after { width: 16px; height: 18px; background: url("../images/공유하기버튼.png") no-repeat center; background-size: contain; }
+
+.oil .event .event2 .card .video-btn.video2 { background: #5d493f; }
+
+.oil .event .event2 .card .video-btn.video2:after { width: 18px; height: 18px; background: url("../images/다운로드버튼.png") no-repeat center; background-size: contain; }
+
+.oil .event .tip { position: relative; margin-top: 60px; padding: 36px 0 49px 0; border-radius: 20px; border: solid 2px rgba(175, 114, 73, 0.15); background: rgba(0, 0, 0, 0.15); overflow: hidden; }
+
+.oil .event .tip .tag { position: absolute; top: 0; width: 0; height: 0; border-right: 120px solid transparent; border-top: 120px solid #2e201b; font-size: 30px; }
+
+.oil .event .tip .tag span { position: absolute; top: -106px; left: 15px; color: white; font-size: 30px; }
+
+.oil .event .tip__title { font-size: 38px; text-align: center; color: white; }
+
+.oil .event .tip__title strong { font-weight: 500; }
+
+.oil .event .tip ul { position: relative; max-width: 942px; margin: 34px auto 0 auto; font-size: 20px; color: white; font-weight: 300; }
+
+.oil .event .tip ul li { margin-top: 17px; }
+
+.oil .event .tip ul li:first-child { margin-top: 20px; }
+
+.oil .event .tip ul li span { display: inline-block; }
+
+.oil .event .tip ul li span:first-child { margin-left: 11px; }
+
+.oil .gift-set { padding: 72px 0 95px 0; background: #ebdace; }
+
+.oil .gift-set .title-img { font-size: 17px; color: #96120e; text-align: center; }
+
+.oil .gift-set .title-img:before { display: block; margin: 0 auto; margin-bottom: 12px; width: 141px; height: 29px; background: url("../images/gift-set-title.png") no-repeat center; background-size: contain; content: ''; }
+
+.oil .gift-set .title { margin-top: 54px; font-size: 70px; color: #4a2e23; text-align: center; font-family: 'Noto Serif KR', serif; }
+
+.oil .gift-set .desc { margin-top: 29px; font-size: 24px; line-height: 1.5; text-align: center; color: #5d493f; }
+
+.oil .gift-set .item-wrap { margin-top: 53px; padding-top: 60px; padding-bottom: 53px; width: 1200px; background: #faf1eb; border-radius: 20px; }
+
+.oil .gift-set .item-wrap ul { text-align: center; }
+
+.oil .gift-set .item-wrap li { position: relative; display: inline-block; }
+
+.oil .gift-set .item-wrap li:after { position: absolute; right: 0; top: 0; bottom: 0; width: 1px; height: 100%; background: #d6cec9; content: ''; }
+
+.oil .gift-set .item-wrap li:last-child:after { content: none; }
+
+.oil .gift-set .item-wrap li.one { padding-right: 61px; }
+
+.oil .gift-set .item-wrap li.one .img { width: 322px; height: 208px; background: url("../images/참기름1.png") no-repeat center; background-size: contain; }
+
+.oil .gift-set .item-wrap li.two { margin: 0 50px 0 54px; padding-right: 55px; }
+
+.oil .gift-set .item-wrap li.two .img { width: 194px; height: 228px; background: url("../images/참기름2.png") no-repeat center; background-size: contain; }
+
+.oil .gift-set .item-wrap li.three .img { width: 336px; height: 202px; background: url("../images/참기름3.png") no-repeat center; background-size: contain; }
+
+.oil .gift-set .item-wrap li p { margin-top: 45px; font-size: 19px; }
+
+.oil .gift-set .item-wrap li p strong { display: block; margin-bottom: 6px; }
+
+.oil .gift-set button { display: block; margin: 61px auto 0 auto; width: 420px; height: 95px; background: #4a2e23; color: white; font-size: 28px; border-radius: 10vw; }
+
+.oil .gift-set button:after { display: inline-block; margin-left: 20px; width: 51px; height: 12px; background: url("../images/투표버튼화살표.png") no-repeat center; background-size: contain; vertical-align: middle; content: ''; }
+
+.oil .gift-set button span { display: inline-block; vertical-align: middle; }
+
+.oil .link-area { padding-top: 92px; padding-bottom: 111px; background: #e1cdc2; text-align: center; }
+
+.oil .link-area .title { color: #4a2e23; font-size: 44px; font-family: 'Noto Serif KR', serif; line-height: 1.39; }
+
+.oil .link-area .link-wrap { margin-top: 71px; }
+
+.oil .link-area .link { position: relative; display: inline-block; margin-right: 97px; width: 222px; height: 82px; border-radius: 10vw; background: #f1e8e2; color: #503633; font-size: 19px; vertical-align: top; cursor: pointer; }
+
+.oil .link-area .link:last-child { margin-right: 0; }
+
+.oil .link-area .link:before { position: absolute; left: -51px; top: 0; bottom: 0; margin: auto; width: 104px; height: 104px; content: ''; }
+
+.oil .link-area .link:after { position: absolute; right: 20px; top: 0; bottom: 0; margin: auto; width: 12px; height: 18px; background: url("../images/link-arrow.png") no-repeat center; content: ''; }
+
+.oil .link-area .link.st11:before { background: url("../images/11번가.png") no-repeat center; background-size: contain; }
+
+.oil .link-area .link.gmarket:before { background: url("../images/지마켓.png") no-repeat center; background-size: contain; }
+
+.oil .link-area .link.cjmarket:before { background: url("../images/cj마켓.png") no-repeat center; background-size: contain; }
+
+.oil .link-area .link span { display: inline-block; margin-top: 15px; line-height: 1.29; text-align: left; font-weight: 500; }
+
+.oil .notice { padding: 55px 0 58px 0; background: #270808; }
+
+.oil .notice .title { color: white; font-size: 25px; }
+
+.oil .notice ul { margin-top: 30px; }
+
+.oil .notice ul li { color: rgba(241, 232, 226, 0.47); font-size: 18px; margin-top: 17px; }
+
+.oil .notice ul li:first-child { margin-top: 0; }
+
+.oil .footer { padding: 48px 0 46px 0; color: #333; background: #e6e6e6; }
+
+.oil .footer .wrapper { position: relative; }
+
+.oil .footer li { margin-top: 14px; }
+
+.oil .footer li:first-child { margin-top: 0; }
+
+.oil .footer li .bar { display: inline-block; margin: 0px 8px; background: black; width: 1px; height: 15px; vertical-align: middle; }
+
+.oil .footer p { margin-top: 45px; }
+
+.oil .footer__logo { position: absolute; top: -10px; right: 0; width: 199px; height: 56px; background: url("../images/푸터로고.png") no-repeat center; background-size: contain; }
+
+.oil .popup-btns { position: fixed; bottom: 40px; left: 40px; }
+
+.oil .popup-btns button { padding: 20px; }
+
+.oil .popup { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
+
+.oil .popup.block { display: block; }
+
+.oil .popup.type1 .close-btn { background: url("../images/팝업닫기버튼-블랙.png"); }
+
+.oil .popup.type2 .close-btn { background: url("../images/팝업닫기버튼-화이트.png"); }
+
+.oil .popup__inner { overflow-y: auto; height: 100%; text-align: center; }
+
+.oil .popup__inner:after { display: inline-block; height: 100%; vertical-align: middle; content: ''; }
+
+.oil .popup__wrap { position: relative; display: inline-block; vertical-align: middle; background: #fff; border-radius: 8px; z-index: 100; overflow: hidden; }
+
+.oil .popup__wrap .close-btn { position: absolute; top: 30px; right: 30px; width: 37px; height: 37px; cursor: pointer; }
+
+.oil .popup__wrap .btn-red, .oil .popup__wrap .btn-popup-next { position: absolute; }
+
+.oil .popup__wrap .btn-red { bottom: 60px; right: 0; left: 0; margin: auto; width: 280px; height: 60px; background: #96120e; color: white; font-size: 24px; line-height: 60px; }
+
+.oil .popup__wrap .btn-popup-next { width: 0; height: 0; border-bottom: 180px solid #96120e; border-left: 180px solid #f1e8e2; right: 0; bottom: 0; font-size: 24px; color: white; }
+
+.oil .popup__wrap .btn-popup-next span { position: absolute; bottom: -161px; right: 26px; }
+
+.oil .popup__wrap .btn-popup-next span:before { position: relative; display: block; top: -7px; width: 49px; height: 16px; background: url("../images/recipe-btn-arrow.png") no-repeat center; background-size: contain; content: ''; }
+
+.oil .popup .dim { background-color: #000; opacity: 0.5; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 99; }
+
+.oil .popup.recipe .popup__wrap { width: 920px; height: 853px; background: #f1e8e2; }
+
+.oil .popup.recipe .popup__wrap .subtitle { margin-top: 50px; font-size: 20px; letter-spacing: 8.4px; text-align: center; color: #c5b8ab; }
+
+.oil .popup.recipe .popup__wrap .title { margin-top: 17px; font-size: 38px; color: #322f30; font-family: 'Noto Serif KR', serif; }
+
+.oil .popup.recipe .popup__wrap .title span { color: #c93935; }
+
+.oil .popup.recipe .popup__wrap .content { margin-top: 60px; }
+
+.oil .popup.recipe .popup__wrap .video { position: relative; display: inline-block; margin: 0 40px 0 30px; width: 400px; height: 500px; background: black; vertical-align: top; }
+
+.oil .popup.recipe .popup__wrap .video:before { position: absolute; right: 0; left: 0; top: 0; bottom: 0; margin: auto; width: 112px; height: 112px; background: url("../images/영상플레이버튼.png") no-repeat center; background-size: contain; content: ''; }
+
+.oil .popup.recipe .popup__wrap .list { display: inline-block; vertical-align: top; max-width: calc(100% - 485px); text-align: left; }
+
+.oil .popup.recipe .popup__wrap .list .list-title { margin-bottom: 23px; font-size: 25px; color: #703c17; font-weight: 500; }
+
+.oil .popup.recipe .popup__wrap .list .list-title span { color: #96120e; }
+
+.oil .popup.recipe .popup__wrap .list ul { margin-top: 18px; padding-right: 40px; }
+
+.oil .popup.recipe .popup__wrap .list li { margin-bottom: 16px; line-height: 1.5; font-weight: 500; }
+
+.oil .popup.recipe .popup__wrap .list li:before { display: inline-block; vertical-align: middle; text-align: center; }
+
+.oil .popup.recipe .popup__wrap .list li:nth-child(1):before { content: "1"; }
+
+.oil .popup.recipe .popup__wrap .list li:nth-child(2):before { content: "2"; }
+
+.oil .popup.recipe .popup__wrap .list li:nth-child(3):before { content: "3"; }
+
+.oil .popup.recipe .popup__wrap .list li:nth-child(4):before { content: "4"; }
+
+.oil .popup.recipe .popup__wrap .list li:nth-child(5):before { content: "5"; }
+
+.oil .popup.recipe .popup__wrap .list li:before { margin-right: 9px; width: 30px; height: 30px; color: white; background: #5d493f; border-radius: 50%; vertical-align: top; line-height: 30px; }
+
+.oil .popup.recipe .popup__wrap .list li span { margin-top: 4px; display: inline-block; vertical-align: top; max-width: calc(100% - 40px); }
+
+.oil .popup.false-answer .popup__wrap { width: 480px; height: 650px; }
+
+.oil .popup.false-answer .popup__wrap .img { display: block; margin: 73px auto 0 auto; width: 121px; height: 172px; background: url("../images/다시생각해보세요팝업제품.png") no-repeat center; background-size: contain; }
+
+.oil .popup.false-answer .popup__wrap strong { display: block; margin-top: 32px; font-size: 35px; }
+
+.oil .popup.false-answer .popup__wrap p { margin-top: 29px; font-size: 25px; line-height: 1.5; }
+
+.oil .popup.false-answer .popup__wrap p span { color: #bb140f; }
+
+.oil .popup.false-answer .popup__wrap .btn-red { width: 320px; height: 70px; line-height: 70px; bottom: 75px; }
+
+.oil .popup.agree .popup__wrap { width: 720px; height: 510px; }
+
+.oil .popup.agree .popup__wrap .img { display: inline-block; margin-top: 59px; width: 170px; height: 170px; border: 1px solid #c1c1c1; border-radius: 50%; font-size: 120px; line-height: 160px; color: #a70007; font-weight: 600; }
+
+.oil .popup.agree .popup__wrap p { margin-top: 31px; font-size: 25px; line-height: 1.5; }
