@@ -9,6 +9,7 @@ $(".gift-set .item-wrap.m-layer").slick({
         slideToScroll: 1,
         slidesToShow: 1,
         infinite: true,
+        dots: true
       }
     },
   ]
