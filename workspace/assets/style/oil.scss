@@ -1070,6 +1070,9 @@
       .close-btn {
         background: url('../images/팝업닫기버튼-블랙.png');
       }
+      .close-btn2 {
+        background: url('../images/팝업닫기버튼-블랙.png');
+      }
     }
     &.type2 {
       .close-btn {
@@ -1113,6 +1116,9 @@
           &.is-on {
             .detail-wrap {
               display: block;
+            }
+            .btn-detail {
+              transform: rotate(180deg);
             }
           }
           .detail-wrap {
@@ -1317,6 +1323,14 @@
             content:'';
           }
         }
+      }
+      .close-btn2 {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 37px;
+        height: 37px;
+        cursor: pointer;
       }
     }
     .dim {
