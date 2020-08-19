@@ -1,15 +1,37 @@
+<?php
+require_once $_SERVER["DOCUMENT_ROOT"] ."/include/class/clsDbCon.php";
+require_once $_SERVER["DOCUMENT_ROOT"] ."/include/class/clsRequest.php";
+require_once $_SERVER["DOCUMENT_ROOT"] ."/include/lib/library.php";
+?>
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
+  <title>백설 고소함가득참기름 이벤트</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="robots" content="ALL">
+  <meta name="apple-mobile-web-app-title" content="백설 고소함가득참기름 이벤트">
+  <meta name="description" content="CJ 백설 고소함 가득 참기름 이벤트 (참여기간: 20년 8월25일~9월20일)">
+  <meta name="keywords" content="백설참기름, CJ백설참기름, CJ참기름, CJ, CJ제일제당, 고소함가득참기름, 백설고소함가득참기름, 고소한참기름, 저온압착참기름, 참기름, 찐고소함, 참기름라떼, 참기름잡채김밥, 레시피, 요리, 이벤트, 추석선물세트, 참기름선물세트, 명절선물, 참기름추천">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="백설 고소함가득참기름 이벤트">
+  <meta property="og:site_name" content="백설 고소함가득참기름 이벤트">
+  <meta property="og:description" content="CJ 백설 고소함 가득 참기름 이벤트 (참여기간: 20년 8월25일~9월20일)">
+  <meta property="og:image" content="http://beksul-sesameoil.tsome.net/assets/images/common/800_400.png">
+  <meta property="og:url" content="http://beksul-sesameoil.tsome.net/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="백설 고소함가득참기름 이벤트">
+  <meta name="twitter:description" content="CJ 백설 고소함 가득 참기름 이벤트 (참여기간: 20년 8월25일~9월20일)"/>
+  <meta name="twitter:url" content="http://beksul-sesameoil.tsome.net/">
+  <meta name="twitter:image" content="http://beksul-sesameoil.tsome.net/assets/images/common/480_480.png">
+  <link rel="shortcut icon" type="image/x-icon" href="http://beksul-sesameoil.tsome.net/assets/images/common/favicon.ico">
+  <link rel="canonical" href="http://beksul-sesameoil.tsome.net/">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <link rel="stylesheet" href="/assets/style/index.css" />
   <script type="text/javascript" src="/assets/lib/jquery-3.5.1.min.js"></script>
-  
+  <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
 </head>
 
 <body>
@@ -107,12 +129,12 @@
                   맛</span>을 높일 수 있도록 해주는 <br>백설 고소함 가득 참기름의 압착 방식은 무엇일까요?</div>
             </div>
             <div class="input-area">
-              <input type="text" name="" id="" placeholder="ㅈ" maxlength="1">
-              <input type="text" name="" id="" placeholder="ㅇ" maxlength="1">
-              <input type="text" name="" id="" placeholder="ㅇ" maxlength="1">
-              <input type="text" name="" id="" placeholder="ㅊ" maxlength="1">
+              <input type="text" name="quiz_input1" id="quiz_input1" placeholder="ㅈ" maxlength="1">
+              <input type="text" name="quiz_input2" id="quiz_input2" placeholder="ㅇ" maxlength="1">
+              <input type="text" name="quiz_input3" id="quiz_input3" placeholder="ㅇ" maxlength="1">
+              <input type="text" name="quiz_input4" id="quiz_input4" placeholder="ㅊ" maxlength="1">
             </div>
-            <button><span>정답 응모하기</span></button>
+            <button onclick="enterEvent();"><span>정답 응모하기</span></button>
           </div>
         </div>
         <div class="event2">
@@ -224,19 +246,19 @@
       <div class="wrapper">
         <div class="title">가장 맛있는 온도에서 짜내어 #찐고소함이 가득한 <br>고소함 가득 참기름을 만나보세요!</div>
         <div class="link-wrap">
-          <a class="link cjmarket" href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=30273220">
+          <a class="link cjmarket" href="https://www.cjthemarket.com/pc/prod/prodDetail?prdCd=30273220" target="_blank">
             <span>CJ마켓 <br>바로가기</span>
           </a>
-          <a class="link st11" href="http://www.11st.co.kr/products/1392974617?trTypeCd=21&trCtgrNo=585021">
+          <a class="link st11" href="http://www.11st.co.kr/products/1392974617?trTypeCd=21&trCtgrNo=585021" target="_blank">
             <span>11번가 <br>바로가기</span>
           </a>
-          <a class="link emart" href="http://emart.ssg.com/item/itemView.ssg?itemId=1000051749162">
+          <a class="link emart" href="http://emart.ssg.com/item/itemView.ssg?itemId=1000051749162" target="_blank">
             <span>이마트 <br>바로가기</span>
           </a>
-          <a class="link lotte" href="https://www.lotteon.com/p/product/LM8801007769707?sitmNo=LM8801007769707_001&mall_no=4&dp_infw_cd=SCH%EC%B0%B8%EA%B8%B0%EB%A6%84 ">
+          <a class="link lotte" href="https://www.lotteon.com/p/product/LM8801007769707?sitmNo=LM8801007769707_001&mall_no=4&dp_infw_cd=SCH%EC%B0%B8%EA%B8%B0%EB%A6%84" target="_blank">
             <span>롯데마트 <br>바로가기</span>
           </a>
-          <a class="link homeplus" href="http://www.homeplus.co.kr/app.product.GoodDetail.ghs?comm=usr.detail&good_id=135390161">
+          <a class="link homeplus" href="http://www.homeplus.co.kr/app.product.GoodDetail.ghs?comm=usr.detail&good_id=135390161" target="_blank">
             <span>홈플러스 <br>바로가기</span>
           </a>
         </div>
@@ -284,13 +306,15 @@
     </div>
 
     <!-- 팝업 -->
-    <!-- 투표완료 -->
+    <!-- 투표완료 or 정답제출 -->
     <div class="popup complete-vote type2">
       <div class="popup__inner">
         <div class="popup__wrap">
           <div class="close-btn"></div>
           <div class="title">
-            <p>투표가 완료되었습니다</p>
+            <input type="hidden" id="pop_div">
+            <p id="pop_text"></p>
+            <!--<p>투표가 완료되었습니다</p>-->
             <div class="desc">당첨 시,선물 받을 배송지를 정확히 입력해주세요.</div>
           </div>
           <div class="content">
@@ -341,39 +365,28 @@
             <div class="input-area">
               <div class="input-wrap name">
                 <strong>*성명</strong>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="name">
               </div>
               <div class="input-wrap phone">
                 <strong>*연락처</strong>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="phone" maxlength="13">
               </div>
               <div class="input-wrap adress">
                 <strong>*주소</strong>
-                <input type="text" name="" id="" class="address-number" readonly>
+                <input type="text" name="" id="zipcode" class="address-number" readonly>
                 <button class="btn-red-adress">주소 찾기</button>
               </div>
               <div class="input-wrap adress-detail">
                 <strong></strong>
-                <input type="text" name="" id="" class="address-detail" readonly>
-                <input type="text" name="" id="" class="address-detail2">
+                <input type="text" name="" id="address" class="address-detail" readonly>
+                <input type="text" name="" id="address_detail" class="address-detail2">
               </div>
             </div>
             <div class="btn-wrap">
-              <button class="btn-red">확인</button>
+              <button class="btn-red" onclick="submitForm($('#pop_div').val());">확인</button>
               <button class="btn-gray">취소</button>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="dim"></div>
-    </div>
-
-    <!-- 정답입니다 -->
-    <div class="popup correct-answer type2">
-      <div class="popup__inner">
-        <div class="popup__wrap">
-          <div class="close-btn"></div>
-          정답입니다.
         </div>
       </div>
       <div class="dim"></div>
@@ -416,11 +429,11 @@
     <div class="popup agree type1">
       <div class="popup__inner">
         <div class="popup__wrap">
-          <div class="close-btn"></div>
+          <div class="close-btn2" onclick="closePop('agree');"></div>
           <div class="img">!</div>
           <p>필수 항목에 동의하셔야 이벤트 참여가 가능합니다.</p>
           <div class="btn-wrap">
-            <button class="btn-red">확인</button>
+            <button class="btn-red" onclick="closePop('agree');">확인</button>
           </div>
         </div>
       </div>
@@ -445,7 +458,9 @@
   </div>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script type="text/javascript" src="/assets/script/common.js"></script>
+  <script type="text/javascript" src="/assets/script/popup.js"></script>
   <script type="text/javascript" src="/assets/script/slick.js"></script>
+  <script type="text/javascript" src="/assets/script/dev.js"></script>
 </body>
 
 </html>
