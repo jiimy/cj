@@ -1,3 +1,6 @@
+$('.btn-detail').click(function(){
+  $(this).closest('.agree').toggleClass('is-on');
+})
 function showpopup(openBtn, popup){
   $(openBtn).click(function(){
     $(popup).addClass('block');

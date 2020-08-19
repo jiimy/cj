@@ -358,6 +358,16 @@
 
 .oil .popup.type2 .content .agree.agree2 { margin-top: -1px; }
 
+.oil .popup.type2 .content .agree.is-on .detail-wrap { display: block; }
+
+.oil .popup.type2 .content .agree .detail-wrap { display: none; position: absolute; top: 58px; left: 0; padding: 20px; width: 100%; max-height: 230px; border: 1px solid #ddd; background: white; box-sizing: border-box; overflow: auto; z-index: 1; }
+
+.oil .popup.type2 .content .agree .detail-wrap p { line-height: initial; }
+
+.oil .popup.type2 .content .agree .detail-wrap .tit { margin: 0 0 4px 0; font-weight: 700; }
+
+.oil .popup.type2 .content .agree .detail-wrap .txt + .tit { margin-top: 30px; }
+
 .oil .popup.type2 .content label { cursor: pointer; }
 
 .oil .popup.type2 .content label input { position: absolute; opacity: 0; }

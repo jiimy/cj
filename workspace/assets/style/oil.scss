@@ -1088,6 +1088,37 @@
           &.agree2 {
             margin-top: -1px;
           }
+          &.is-on {
+            .detail-wrap {
+              display: block;
+            }
+          }
+          .detail-wrap {
+            display: none;
+            position: absolute;
+            top: 58px;
+            left: 0;
+            padding: 20px;
+            width: 100%;
+            max-height: 230px;
+            border: 1px solid #ddd;
+            background: white;
+            box-sizing: border-box;
+            overflow: auto;
+            z-index: 1;
+            p {
+              line-height: initial;
+            }
+            .tit {
+              margin: 0 0 4px 0;
+              font-weight: 700;
+            }
+            .txt {
+              + .tit {
+                margin-top: 30px;
+              }
+            }
+          }
         }
         label {
           cursor: pointer;
@@ -1117,9 +1148,9 @@
           height: 100%;
           width: 75px;
           background: url('../images/디테일화살표.png') no-repeat center;
-          
         }
         .input-area {
+          // display: none;
           margin-top: 20px;
           .input-wrap {
             margin-bottom: 21px;
