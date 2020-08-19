@@ -424,9 +424,9 @@
 
 .oil .popup__wrap .btn-gray { width: 280px; height: 60px; margin-left: 12px; background: #999; color: white; font-size: 24px; line-height: 60px; }
 
-.oil .popup__wrap .btn-popup-next { width: 0; height: 0; border-bottom: 180px solid #96120e; border-left: 180px solid #f1e8e2; right: 0; bottom: 0; font-size: 24px; color: white; }
+.oil .popup__wrap .btn-popup-next { width: 0; height: 0; border-bottom: 150px solid #96120e; border-left: 150px solid #f1e8e2; right: 0; bottom: 0; font-size: 24px; color: white; }
 
-.oil .popup__wrap .btn-popup-next span { position: absolute; bottom: -161px; right: 26px; }
+.oil .popup__wrap .btn-popup-next span { position: absolute; bottom: -136px; right: 26px; }
 
 .oil .popup__wrap .btn-popup-next span:before { position: relative; display: block; top: -7px; width: 49px; height: 16px; background: url("../images/recipe-btn-arrow.png") no-repeat center; background-size: contain; content: ''; }
 
