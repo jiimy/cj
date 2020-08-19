@@ -354,6 +354,22 @@
 
 .oil .popup.type2 .content { width: 688px; margin: 20px auto 0 auto; text-align: left; }
 
+.oil .popup.type2 .content .agree { position: relative; border: 1px solid #ddd; padding: 0 0 0 30px; height: 58px; line-height: 55px; }
+
+.oil .popup.type2 .content .agree.agree2 { margin-top: -1px; }
+
+.oil .popup.type2 .content label { cursor: pointer; }
+
+.oil .popup.type2 .content label input { position: absolute; opacity: 0; }
+
+.oil .popup.type2 .content label input:checked + .chk { background-position: 0 100%; }
+
+.oil .popup.type2 .content label .chk { display: inline-block; margin-right: 16px; width: 26px; height: 25px; vertical-align: middle; background: url("../images/check_red.png") no-repeat 0 0; }
+
+.oil .popup.type2 .content label span { display: inline-block; vertical-align: middle; }
+
+.oil .popup.type2 .content .btn-detail { position: absolute; right: 0; height: 100%; width: 75px; background: url("../images/디테일화살표.png") no-repeat center; }
+
 .oil .popup.type2 .content .input-area { margin-top: 20px; }
 
 .oil .popup.type2 .content .input-area .input-wrap { margin-bottom: 21px; font-size: 0; }

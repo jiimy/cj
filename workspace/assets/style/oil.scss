@@ -1079,6 +1079,46 @@
         width: 688px;
         margin: 20px auto 0 auto;
         text-align: left;
+        .agree {
+          position: relative;
+          border: 1px solid #ddd;
+          padding: 0 0 0 30px;
+          height: 58px;
+          line-height: 55px;
+          &.agree2 {
+            margin-top: -1px;
+          }
+        }
+        label {
+          cursor: pointer;
+          input {
+            position: absolute;
+            opacity: 0;
+            &:checked + .chk {
+              background-position: 0 100%;
+            }
+          }
+          .chk {
+            display: inline-block;
+            margin-right: 16px;
+            width: 26px;
+            height: 25px;
+            vertical-align: middle;
+            background:url('../images/check_red.png') no-repeat 0 0;
+          }
+          span {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        .btn-detail {
+          position: absolute;
+          right: 0;
+          height: 100%;
+          width: 75px;
+          background: url('../images/디테일화살표.png') no-repeat center;
+          
+        }
         .input-area {
           margin-top: 20px;
           .input-wrap {
