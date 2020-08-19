@@ -25,20 +25,38 @@ showpopup('.btn-false-answer', '.false-answer');
 $btn_idx: '';
 $('.event2 .card1 .detail').click(function(){
   $('.recipe1').addClass('block');
-  $btn_idx = 1;
+  $btn_idx = 0;
+  $('.recipe1 .list').addClass('none');
+  $('.recipe1 .list0').removeClass('none');
+  $('.recipe1 .btn-wrap').addClass('none');
+  $('.recipe1 .btn-popup-next').removeClass('none');
 })
 
-$('.btn-popup-next').click(function(){
-  if($btn_idx = 1) {
-    
+// $btn_idx = 0 일때 재료, 
+// $btn_idx = 1 일때 첫번째
+// $btn_idx = 2 일때 두번째
+$('.recipe1 .btn-popup-next').click(function(){
+  switch ($btn_idx) {
+    case 0:
+      $('.recipe1 .list').addClass('none');
+      $('.recipe1 .list1').removeClass('none');
+      console.log($btn_idx);
+      $btn_idx = 1;
+    break;
+
+    case 1:
+      $('.recipe1 .list').addClass('none');
+      $('.recipe1 .list2').removeClass('none');
+      $(this).addClass('none');
+      $(this).closest('.popup__wrap').children('.btn-wrap ').removeClass('none');
+      // $btn_idx = 2;
+    break;
+    default:
+      break;
   }
 })
 
-
-// $('.detail').click(function(){
-//   $('.recipe').addClass('block');
-// })
-
-// $('.wrapper').click(function(){
-//   console.log('바디클릭');
-// })
+$('.recipe1 .close-btn').click(function(){
+  $btn_idx = 0;
+  console.log($btn_idx);
+})
