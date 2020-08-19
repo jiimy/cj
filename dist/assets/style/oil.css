@@ -346,6 +346,8 @@
 
 .oil .popup.type2 .close-btn { background: url("../images/팝업닫기버튼-화이트.png"); }
 
+.oil .popup.type1 .close-btn2 { background: url("../images/팝업닫기버튼-블랙.png"); }
+
 .oil .popup.type2 .popup__wrap { width: 860px; height: 763px; }
 
 .oil .popup.type2 .title { padding: 44px 0 42px 0; color: white; background: #96120e; }
@@ -415,6 +417,8 @@
 .oil .popup__wrap { position: relative; display: inline-block; vertical-align: middle; background: #fff; border-radius: 8px; z-index: 100; overflow: hidden; }
 
 .oil .popup__wrap .close-btn { position: absolute; top: 30px; right: 30px; width: 37px; height: 37px; cursor: pointer; }
+
+.oil .popup__wrap .close-btn2 { position: absolute; top: 30px; right: 30px; width: 37px; height: 37px; cursor: pointer; }
 
 .oil .popup__wrap .btn-wrap, .oil .popup__wrap .btn-popup-next { position: absolute; }
 
