@@ -61,8 +61,9 @@ gulp.task("html", () => {
 
 gulp.task("script:concat", () => {
   return new Promise((resolve) => {
-    gulp.src(PATH.ASSETS.SCRIPT + "/*.js") // src 경로에 있는 모든 js 파일을 common.js 라는 이름의 파일로 합친다.
-      .pipe(concat("common.js"))
+    gulp.src(PATH.ASSETS.SCRIPT + "/*.js") 
+    // src 경로에 있는 모든 js 파일을 common.js 라는 이름의 파일로 합친다.
+      // .pipe(concat("common.js"))
       .pipe(gulp.dest(DEST_PATH.ASSETS.SCRIPT))
       .pipe(browserSync.reload({ stream: true }));
     resolve();
