@@ -1113,24 +1113,32 @@
             &.adress {
               input {
                 width: 240px;
+                background: #fafafa;
               }
               .btn-red-adress {
                 display: inline-block;
                 vertical-align: top;
                 margin-left: 13px;
-                width: 150px;
+                width: 80px;
                 height: 40px;
                 color: white;
                 font-size: 16px;
-                background: #96120e;
+                background: #34b56a;
                 text-align: center;
                 line-height: 38px;
               }
             }
             &.adress-detail {
               margin-top: -12px;
-              input {
-                width: 589px;
+              .address-detail {
+                width: 184px;
+                background: #fafafa;
+                // width: 589px;
+              }
+              .address-detail2 {
+                width: 260px;
+                margin-left: 10px;
+                // width: 589px;
               }
             }
           }
