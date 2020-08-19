@@ -15,7 +15,8 @@ function closepopup(closeBtn){
 closepopup('.close-btn, .dim');
 
 showpopup('.btn-complete-vote', '.complete-vote');
-showpopup('.btn-recipe', '.recipe');
+showpopup('.event2 .card1 .detail', '.recipe1');
+showpopup('.event2 .card2 .detail', '.recipe2');
 showpopup('.btn-correct-answer', '.correct-answer');
 showpopup('.btn-agree', '.agree');
 showpopup('.btn-false-answer', '.false-answer');
