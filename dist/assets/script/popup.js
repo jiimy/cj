@@ -16,8 +16,7 @@ closepopup('.close-btn, .dim');
 closepopup('.btn-red');
 
 showpopup('.btn-complete-vote', '.complete-vote');
-// showpopup('.event2 .card1 .detail', '.recipe1');
-showpopup('.event2 .card2 .detail', '.recipe2');
+showpopup('.btn-recipe', '.recipe');
 showpopup('.btn-correct-answer', '.correct-answer');
 showpopup('.btn-agree', '.agree');
 showpopup('.btn-false-answer', '.false-answer');

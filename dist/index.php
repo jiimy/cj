@@ -307,12 +307,16 @@ require_once $_SERVER["DOCUMENT_ROOT"] ."/include/lib/library.php";
 
     <!-- 팝업 -->
     <!-- 투표완료 or 정답제출 -->
+    <div id="post_layer">
+      <button type="button" class="btn_close" onclick="closeDaumPostcode();">닫기</button>
+    </div>
     <div class="popup complete-vote type2">
       <div class="popup__inner">
         <div class="popup__wrap">
           <div class="close-btn"></div>
           <div class="title">
             <input type="hidden" id="pop_div">
+            <input type="hidden" id="vote_div">
             <p id="pop_text"></p>
             <!--<p>투표가 완료되었습니다</p>-->
             <div class="desc">당첨 시,선물 받을 배송지를 정확히 입력해주세요.</div>
@@ -374,7 +378,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] ."/include/lib/library.php";
               <div class="input-wrap adress">
                 <strong>*주소</strong>
                 <input type="text" name="" id="zipcode" class="address-number" readonly>
-                <button class="btn-red-adress">주소 찾기</button>
+                <button class="btn-red-adress" onclick="postSearchLayer();">주소 찾기</button>
               </div>
               <div class="input-wrap adress-detail">
                 <strong></strong>
@@ -383,7 +387,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] ."/include/lib/library.php";
               </div>
             </div>
             <div class="btn-wrap">
-              <button class="btn-red" onclick="submitForm($('#pop_div').val());">확인</button>
+              <button class="btn-red" onclick="submitForm($('#pop_div').val(), $('#vote_div').val());">확인</button>
               <button class="btn-gray">취소</button>
             </div>
           </div>
