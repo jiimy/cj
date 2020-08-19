@@ -444,6 +444,9 @@
         width: 1200px;
         height: 740px;
         background:url('../images/이벤트1배경.png') no-repeat center top;
+        @include media-mo() {
+          width: auto;
+        }
         .input-area {
           margin-top: 57px;
           text-align: center;
@@ -505,6 +508,9 @@
         box-sizing: border-box;
         background-size: contain;
         text-align: center;
+        @include media-mo() {
+          width: auto;
+        }
       }
       .card {
         display: inline-block;

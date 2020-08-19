@@ -142,6 +142,8 @@
 
 .oil .event .event1 .content-wrap { margin-top: 58px; padding-top: 80px; width: 1200px; height: 740px; background: url("../images/이벤트1배경.png") no-repeat center top; }
 
+@media (max-width: 767px) { .oil .event .event1 .content-wrap { width: auto; } }
+
 .oil .event .event1 .content-wrap .input-area { margin-top: 57px; text-align: center; }
 
 .oil .event .event1 .content-wrap input { display: inline-block; margin-right: 5px; padding-left: 10px; width: 170px; height: 200px; border-radius: 20px; background: #f1e8e2; font-size: 160px; box-sizing: border-box; font-weight: 600; }
@@ -159,6 +161,8 @@
 .oil .event .event2 { margin-top: 130px; }
 
 .oil .event .event2 .content-wrap { margin-top: 70px; padding-top: 80px; width: 1200px; height: 1220px; background: url("../images/이벤트2배경.png") no-repeat center 0px; box-sizing: border-box; background-size: contain; text-align: center; }
+
+@media (max-width: 767px) { .oil .event .event2 .content-wrap { width: auto; } }
 
 .oil .event .event2 .card { display: inline-block; width: 540px; text-align: center; margin-right: 15px; }
 
