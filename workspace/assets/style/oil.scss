@@ -1085,6 +1085,11 @@
           padding: 0 0 0 30px;
           height: 58px;
           line-height: 55px;
+          &.agree1 {
+            .detail-wrap {
+              z-index: 2;
+            }
+          }
           &.agree2 {
             margin-top: -1px;
           }

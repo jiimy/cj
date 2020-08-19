@@ -356,6 +356,8 @@
 
 .oil .popup.type2 .content .agree { position: relative; border: 1px solid #ddd; padding: 0 0 0 30px; height: 58px; line-height: 55px; }
 
+.oil .popup.type2 .content .agree.agree1 .detail-wrap { z-index: 2; }
+
 .oil .popup.type2 .content .agree.agree2 { margin-top: -1px; }
 
 .oil .popup.type2 .content .agree.is-on .detail-wrap { display: block; }
