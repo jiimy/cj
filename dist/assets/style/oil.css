@@ -10,6 +10,12 @@
 
 @media (max-width: 767px) { .oil .m-layer { display: block; } }
 
+.oil .inline-block { display: inline-block !important; }
+
+.oil .block { display: block !important; }
+
+.oil .none { display: none !important; }
+
 .oil .color-right-brown { color: #e9bc91; }
 
 .oil .color-brown { color: #d29467; }
@@ -346,8 +352,6 @@
 
 .oil .popup.type2 .close-btn { background: url("../images/팝업닫기버튼-화이트.png"); }
 
-.oil .popup.type1 .close-btn2 { background: url("../images/팝업닫기버튼-블랙.png"); }
-
 .oil .popup.type2 .popup__wrap { width: 860px; height: 763px; }
 
 .oil .popup.type2 .title { padding: 44px 0 42px 0; color: white; background: #96120e; }
@@ -418,8 +422,6 @@
 
 .oil .popup__wrap .close-btn { position: absolute; top: 30px; right: 30px; width: 37px; height: 37px; cursor: pointer; }
 
-.oil .popup__wrap .close-btn2 { position: absolute; top: 30px; right: 30px; width: 37px; height: 37px; cursor: pointer; }
-
 .oil .popup__wrap .btn-wrap, .oil .popup__wrap .btn-popup-next { position: absolute; }
 
 .oil .popup__wrap .btn-wrap { bottom: 60px; right: 0; left: 0; margin: auto; text-align: center; }
@@ -428,7 +430,7 @@
 
 .oil .popup__wrap .btn-gray { width: 280px; height: 60px; margin-left: 12px; background: #999; color: white; font-size: 24px; line-height: 60px; }
 
-.oil .popup__wrap .btn-popup-next { width: 0; height: 0; border-bottom: 150px solid #96120e; border-left: 150px solid #f1e8e2; right: 0; bottom: 0; font-size: 24px; color: white; }
+.oil .popup__wrap .btn-popup-next { width: 0; height: 0; border-bottom: 170px solid #96120e; border-left: 170px solid #f1e8e2; right: 0; bottom: 0; font-size: 24px; color: white; }
 
 .oil .popup__wrap .btn-popup-next span { position: absolute; bottom: -136px; right: 26px; }
 
@@ -477,6 +479,18 @@
 .oil .popup.recipe .popup__wrap .list li:before { margin-right: 7px; width: 30px; height: 30px; color: white; background: #5d493f; border-radius: 50%; vertical-align: top; line-height: 30px; }
 
 .oil .popup.recipe .popup__wrap .list li span { margin-top: 4px; display: inline-block; vertical-align: top; max-width: calc(100% - 40px); }
+
+.oil .popup.recipe1 .list0 .title { display: inline-block; margin-top: 0; padding: 8px 14px; background: #cec2bb; font-size: 19px; font-family: 'Noto Sans KR', sans-serif; border-radius: 10vw; }
+
+.oil .popup.recipe1 .list0 .title span { color: #000; }
+
+.oil .popup.recipe1 .list0 .text { margin-top: 14px; line-height: 1.5; }
+
+.oil .popup.recipe1 .list0 .text p + p { margin-top: 14px; }
+
+.oil .popup.recipe1 .list0 .text p + p span { display: block; }
+
+.oil .popup.recipe1 .list0 .text + .title { margin-top: 27px; }
 
 .oil .popup.recipe2 p { line-height: 1.5; }
 
