@@ -276,11 +276,13 @@
 
 .oil .gift-set .item-wrap .item-content p strong { display: block; margin-bottom: 6px; }
 
-.oil .gift-set button.btn-purchase { display: block; margin: 61px auto 0 auto; width: 420px; height: 95px; background: #4a2e23; color: white; font-size: 28px; border-radius: 10vw; }
+.oil .gift-set button.btn-purchase, .oil .gift-set a.btn-purchase { display: block; margin: 61px auto 0 auto; width: 420px; height: 95px; text-align: center; background: #4a2e23; color: white; font-size: 28px; border-radius: 10vw; }
 
-.oil .gift-set button.btn-purchase:after { display: inline-block; margin-left: 20px; width: 51px; height: 12px; background: url("../images/투표버튼화살표.png") no-repeat center; background-size: contain; vertical-align: middle; content: ''; }
+.oil .gift-set button.btn-purchase:before, .oil .gift-set a.btn-purchase:before { display: inline-block; vertical-align: middle; height: 100%; content: ''; }
 
-.oil .gift-set button.btn-purchase span { display: inline-block; vertical-align: middle; }
+.oil .gift-set button.btn-purchase:after, .oil .gift-set a.btn-purchase:after { display: inline-block; margin-left: 20px; width: 51px; height: 12px; background: url("../images/투표버튼화살표.png") no-repeat center; background-size: contain; vertical-align: middle; content: ''; }
+
+.oil .gift-set button.btn-purchase span, .oil .gift-set a.btn-purchase span { display: inline-block; vertical-align: middle; }
 
 .oil .link-area { padding-top: 92px; padding-bottom: 111px; background: #e1cdc2; text-align: center; }
 

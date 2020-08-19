@@ -854,16 +854,23 @@
         }
       }
     }
-    button {
+    button, a {
       &.btn-purchase {
         display: block;
         margin: 61px auto 0 auto;
         width: 420px;
         height: 95px;
+        text-align: center;
         background: #4a2e23;
         color: white;
         font-size: 28px;
         border-radius: 10vw;
+        &:before {
+          display: inline-block;
+          vertical-align: middle;
+          height: 100%;
+          content:'';
+        }
         &:after {
           display: inline-block;
           margin-left: 20px;
