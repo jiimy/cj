@@ -290,6 +290,8 @@
 
 @media (max-width: 767px) { .oil .event .event2 .card .video:before { width: 57px; height: 57px; } }
 
+.oil .event .event2 .card .video .ytp-large-play-button svg { display: none; }
+
 .oil .event .event2 .card .detail { margin: 10px 20px 0 0; text-align: right; font-size: 20px; color: #927f6c; }
 
 @media (max-width: 767px) { .oil .event .event2 .card .detail { font-size: 12.5px; } }
