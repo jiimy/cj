@@ -1053,17 +1053,16 @@
               margin-top: 12px;
             }
           }
-          
-          span {
-            display: inline-block;
-            &:first-child {
-              margin-left: 11px;
-              @include media-mo() {
-                margin-left: 0;
+          > span {
+            span {
+              display: inline-block;
+              &:first-child {
+                margin-left: 11px;
+                @include media-mo() {
+                  margin-left: 0;
+                }
               }
             }
-          }
-          > span {
             @include media-mo() {
               display: inline-block;
               margin-top: -3px;

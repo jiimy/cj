@@ -366,11 +366,11 @@
 
 @media (max-width: 767px) { .oil .event .tip ul li:first-child { margin-top: 12px; } }
 
-.oil .event .tip ul li span { display: inline-block; }
+.oil .event .tip ul li > span span { display: inline-block; }
 
-.oil .event .tip ul li span:first-child { margin-left: 11px; }
+.oil .event .tip ul li > span span:first-child { margin-left: 11px; }
 
-@media (max-width: 767px) { .oil .event .tip ul li span:first-child { margin-left: 0; } }
+@media (max-width: 767px) { .oil .event .tip ul li > span span:first-child { margin-left: 0; } }
 
 @media (max-width: 767px) { .oil .event .tip ul li > span { display: inline-block; margin-top: -3px; line-height: 1.4; } }
 
