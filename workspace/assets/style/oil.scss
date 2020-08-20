@@ -1893,7 +1893,11 @@
         .list {
           display: inline-block;
           vertical-align: top;
-          max-width: calc(100% - 485px);
+          // max-width: calc(100% - 485px);
+          width: 435px;
+          @include media-mo() {
+            width: auto;
+          }
           text-align: left;
           .list-title {
             margin-bottom: 23px;

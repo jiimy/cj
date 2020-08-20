@@ -659,7 +659,9 @@
 
 .oil .popup.recipe .popup__wrap .video:before { position: absolute; right: 0; left: 0; top: 0; bottom: 0; margin: auto; width: 112px; height: 112px; background: url("../images/영상플레이버튼.png") no-repeat center; background-size: contain; content: ''; }
 
-.oil .popup.recipe .popup__wrap .list { display: inline-block; vertical-align: top; max-width: calc(100% - 485px); text-align: left; }
+.oil .popup.recipe .popup__wrap .list { display: inline-block; vertical-align: top; width: 435px; text-align: left; }
+
+@media (max-width: 767px) { .oil .popup.recipe .popup__wrap .list { width: auto; } }
 
 .oil .popup.recipe .popup__wrap .list .list-title { margin-bottom: 23px; font-size: 25px; color: #703c17; font-weight: 600; }
 
