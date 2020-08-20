@@ -825,11 +825,11 @@
               height: 57px;
             }
           }
-          .ytp-large-play-button {
-            svg {
-              display: none;
-            }
-          }
+          // .ytp-large-play-button {
+          //   svg {
+          //     display: none;
+          //   }
+          // }
         }
         .detail {
           margin: 10px 20px 0 0;
@@ -1892,7 +1892,7 @@
             height: 112px;
             background: url('../images/영상플레이버튼.png') no-repeat center;
             background-size: contain;
-            content:'';
+            content: none;
           }
         }
         .list {
