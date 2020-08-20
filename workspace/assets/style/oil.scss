@@ -1581,6 +1581,9 @@
       .popup__wrap {
         width: 860px;
         height: 763px;
+        @include media-mo() {
+          width: 100%;
+        }
       }
       .title {
         padding: 44px 0 42px 0;
@@ -1599,6 +1602,10 @@
         width: 688px;
         margin: 20px auto 0 auto;
         text-align: left;
+        @include media-mo() {
+          width: calc(100% - 40px);
+          margin-left: 20px;
+        }
         .agree {
           position: relative;
           border: 1px solid #ddd;
@@ -2001,6 +2008,9 @@
       .popup__wrap {
         width: 480px;
         height: 650px;
+        @include media-mo() {
+          width: 100%;
+        }
         .img {
           display: block;
           margin: 73px auto 0 auto;
@@ -2034,6 +2044,9 @@
       .popup__wrap {
         width: 720px;
         height: 510px;
+        @include media-mo() {
+          width: 100%;
+        }
         .img {
           display: inline-block;
           margin-top: 59px;

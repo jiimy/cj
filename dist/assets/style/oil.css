@@ -553,6 +553,8 @@
 
 .oil .popup.type2 .popup__wrap { width: 860px; height: 763px; }
 
+@media (max-width: 767px) { .oil .popup.type2 .popup__wrap { width: 100%; } }
+
 .oil .popup.type2 .title { padding: 44px 0 42px 0; color: white; background: #96120e; }
 
 .oil .popup.type2 .title p { font-size: 40px; font-weight: 600; }
@@ -560,6 +562,8 @@
 .oil .popup.type2 .title .desc { margin-top: 18px; font-size: 25px; }
 
 .oil .popup.type2 .content { width: 688px; margin: 20px auto 0 auto; text-align: left; }
+
+@media (max-width: 767px) { .oil .popup.type2 .content { width: calc(100% - 40px); margin-left: 20px; } }
 
 .oil .popup.type2 .content .agree { position: relative; border: 1px solid #ddd; padding: 0 0 0 30px; height: 58px; line-height: 55px; }
 
@@ -709,6 +713,8 @@
 
 .oil .popup.false-answer .popup__wrap { width: 480px; height: 650px; }
 
+@media (max-width: 767px) { .oil .popup.false-answer .popup__wrap { width: 100%; } }
+
 .oil .popup.false-answer .popup__wrap .img { display: block; margin: 73px auto 0 auto; width: 121px; height: 172px; background: url("../images/다시생각해보세요팝업제품.png") no-repeat center; background-size: contain; }
 
 .oil .popup.false-answer .popup__wrap strong { display: block; margin-top: 32px; font-size: 35px; }
@@ -720,6 +726,8 @@
 .oil .popup.false-answer .popup__wrap .btn-red { width: 320px; height: 70px; line-height: 70px; bottom: 75px; }
 
 .oil .popup.agree .popup__wrap { width: 720px; height: 510px; }
+
+@media (max-width: 767px) { .oil .popup.agree .popup__wrap { width: 100%; } }
 
 .oil .popup.agree .popup__wrap .img { display: inline-block; margin-top: 59px; width: 170px; height: 170px; border: 1px solid #c1c1c1; border-radius: 50%; font-size: 120px; line-height: 160px; color: #a70007; font-weight: 600; }
 
