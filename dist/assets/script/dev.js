@@ -1,84 +1,28 @@
 function enterEvent() {
-	/*if($('#quiz_input1').val() == '') {
-		alert('정답을 입력해주세요.');
-		$('#quiz_input1').focus();
+	if($('#quiz_input1').val() == '' || $('#quiz_input2').val() == '' || $('#quiz_input3').val() == '' || $('#quiz_input4').val() == '') {
+		showPop('none');
 		
 		return false;
 	}
 	
-	if($('#quiz_input2').val() == '') {
-		alert('정답을 입력해주세요.');
-		$('#quiz_input2').focus();
-		
-		return false;
-	}
-	
-	if($('#quiz_input3').val() == '') {
-		alert('정답을 입력해주세요.');
-		$('#quiz_input3').focus();
-		
-		return false;
-	}
-	
-	if($('#quiz_input4').val() == '') {
-		alert('정답을 입력해주세요.');
-		$('#quiz_input4').focus();
-		
-		return false;
-	}*/
-	
-	if($('#quiz_input1').val() != '저' && $('#quiz_input2').val() != '온' && $('#quiz_input3').val() != '압' && $('#quiz_input4').val() != '착') {
-		//showPop('wrong');
-		showPop('quiz');
+	if($('#quiz_input1').val() != '저' || $('#quiz_input2').val() != '온' || $('#quiz_input3').val() != '압' || $('#quiz_input4').val() != '착') {
+		showPop('wrong');
 	} else {
 		showPop('quiz');
 	}
 }
 
 function submitForm(popDiv, voteDiv) {
-	if(!$("#agree1").is(":checked")) {
+	if(!$("#agree1").is(":checked") || !$("#agree2").is(":checked")) {
+		$('#agree_pop_text').html('필수 항목에 동의하셔야 이벤트 참여가 가능합니다.');
 		showPop('agree');
-		$('#agree1').focus();
 
 		return false;
 	}
 
-	if(!$("#agree2").is(":checked")) {
+	if($('#name').val() == '' || $('#phone').val() == '' || $('#zipcode').val() == '' || $('#address').val() == '' || $('#address_detail').val() == '') {
+		$('#agree_pop_text').html('배송지 정보를 모두 입력해 주세요. <br>당첨 시, 입력한 정보로 경품이 배송됩니다.');
 		showPop('agree');
-		$('#agree2').focus();
-
-		return false;
-	}
-
-	if($('#name').val() == '') {
-		alert('성명을 입력해주세요.');
-		$('#name').focus();
-
-		return false;
-	}
-
-	if($('#phone').val() == '') {
-		alert('연락처를 입력해주세요.');
-		$('#phone').focus();
-
-		return false;
-	}
-
-	if($('#zipcode').val() == '') {
-		alert('주소를 입력해주세요.');
-
-		return false;
-	}
-
-	if($('#address').val() == '') {
-		alert('주소를 입력해주세요.');
-
-		return false;
-	}
-
-	if($('#address_detail').val() == '') {
-		alert('주소를 입력해주세요.');
-		$('#address_detail').focus();
 
 		return false;
 	}
@@ -100,10 +44,19 @@ function submitForm(popDiv, voteDiv) {
 		dataType : 'text',
 		success : function(result) {
 			if($.trim(result) == 'success') {
-				alert('정상적으로 등록되었습니다.');
 				closePop('quiz');
+				showPop('success');
+				if(popDiv == 'vote') {
+					setCookie('likeVote', voteDiv, 365);
+					if(voteDiv == 'A') {
+						$('#like_bnt_A').addClass('is-on');
+					} else if(voteDiv == 'B') {
+						$('#like_bnt_B').addClass('is-on');
+					}
+				}
 			} else if($.trim(result) == 'overlap') {
-				alert('이미 참여하셨습니다.');
+				$('#agree_pop_text').html('이미 참여하셨습니다. 참여는 1인 1회입니다.');
+				showPop('agree');
 				return false;
 			} else {
 				alert('오류가 발생했습니다. \n잠시 후 다시 시도해 주세요.');
@@ -117,8 +70,38 @@ function submitForm(popDiv, voteDiv) {
 	});
 }
 
+function setCookie(cName, cValue, cDay) {
+	var expire = new Date();
+	expire.setDate(expire.getDate() + cDay);
+	cookies = cName + '=' + escape(cValue) + '; path=/ '; //한글 깨짐을 막기위해 escape(cValue)를 합니다.
+	if(typeof cDay != 'undefined') cookies += '; expires=' + expire.toGMTString() + ';';
+	document.cookie = cookies;
+}
+
+function getCookie(cName) {
+	cName = cName + '=';
+	var cookieData = document.cookie;
+	var start = cookieData.indexOf(cName);
+	var cValue = '';
+
+	if(start != -1) {
+		start += cName.length;
+		var end = cookieData.indexOf(';', start);
+		if(end == -1) end = cookieData.length;
+		cValue = cookieData.substring(start, end);
+	}
+
+	return unescape(cValue);
+}
+
 function showPop(div) {
 	if(div == 'wrong') {
+		$('#false_pop_text').html('다시 생각해보세요');
+		$('.false-answer').addClass('block');
+	}
+
+	if(div == 'none') {
+		$('#false_pop_text').html('정답을 입력해주세요');
 		$('.false-answer').addClass('block');
 	}
 	
@@ -127,11 +110,38 @@ function showPop(div) {
 		$('#pop_text').html('정답입니다!');
 		$('.complete-vote').addClass('block');
 	}
+	
+	if(div == 'voteA') {
+		var lvc = getCookie('likeVote');
+		if(lvc == 'A' || lvc == 'B') { 
+			$('#success_pop_text').html('이미 투표하셨습니다.');
+			$('.success').addClass('block');
 
-	if(div == 'vote') {
+			return false;
+		}
+
 		$('#pop_div').val('vote');
+		$('#vote_div').val('A');
 		$('#pop_text').html('투표가 완료되었습니다');
 		$('.complete-vote').addClass('block');
+	} else if(div == 'voteB') {
+		var lvc = getCookie('likeVote');
+		if(lvc == 'A' || lvc == 'B') { 
+			$('#success_pop_text').html('이미 투표하셨습니다.');
+			$('.success').addClass('block');
+
+			return false;
+		}
+
+		$('#pop_div').val('vote');
+		$('#vote_div').val('B');
+		$('#pop_text').html('투표가 완료되었습니다');
+		$('.complete-vote').addClass('block');
+	}
+
+	if(div == 'success') {
+		$('#success_pop_text').html('이벤트 참여가 완료되었습니다!');
+		$('.success').addClass('block');
 	}
 
 	if(div == 'agree') {
@@ -144,17 +154,56 @@ function showPop(div) {
 }
 
 function closePop(div) {
+	if(div == 'wrong') {
+		$('.false-answer').removeClass('block');
+	}
+
 	if(div == 'agree') {
 		$('.agree').removeClass('block');
 	}
 
 	if(div == 'quiz' || div == 'vote') {
 		$('.complete-vote').removeClass('block');
+		$('#name').val('');
+		$('#phone').val('');
+		$('#zipcode').val('');
+		$('#address').val('');
+		$('#address_detail').val('');
+		$("input[type=checkbox]").prop("checked", false);
+	}
+
+	if(div == 'recipe1') {
+		$btn_idx = 0;
+		$('.recipe1').removeClass('block');
+	}
+
+	if(div == 'recipe2') {
+		$('.recipe2').removeClass('block');
+	}
+
+	if(div == 'success') {
+		$('.success').removeClass('block');
 	}
 
 	if(div != 'agree') {
 		$('body').removeClass('is-overflow');
 	}
+}
+
+function openURL(div) {
+	var url = '';
+
+	if(div == 'A1') {
+		url = 'https://www.instagram.com/cjcheiljedang/';
+	} else if(div == 'A2') {
+		url = '/process/download.php?fileName=beksulA';
+	} else if(div == 'B1') {
+		url = 'https://www.instagram.com/cjcheiljedang/';
+	} else if(div == 'B2') {
+		url = '/process/download.php?fileName=beksulB';
+	}
+
+	window.open(url);
 }
 
 function autoHypenPhone(str) {
@@ -196,6 +245,10 @@ $(document).ready(function() {
 	   var val = this.value.trim();
 	   this.value = autoHypenPhone(val);
 	});
+});
+
+$('.event2 .card1 .detail').click(function() {
+	$('body').addClass('is-overflow');
 });
 
 //레이어 우편번호
