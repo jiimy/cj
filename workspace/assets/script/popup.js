@@ -13,7 +13,7 @@ function closepopup(closeBtn){
 }
 
 closepopup('.close-btn, .dim');
-closepopup('.btn-red');
+// closepopup('.btn-red');
 
 showpopup('.btn-complete-vote', '.complete-vote');
 // showpopup('.event2 .card1 .detail', '.recipe1');
