@@ -286,7 +286,7 @@
 
 @media (max-width: 767px) { .oil .event .event2 .card .video { margin-top: 21px; width: calc(100% - 24px); height: 351px; } }
 
-.oil .event .event2 .card .video:before { position: absolute; right: 0; left: 0; top: 0; bottom: 0; margin: auto; width: 112px; height: 112px; background: url("../images/영상플레이버튼.png") no-repeat center; background-size: contain; content: ''; }
+.oil .event .event2 .card .video:before { position: absolute; right: 0; left: 0; top: 0; bottom: 0; margin: auto; width: 112px; height: 112px; background: url("../images/영상플레이버튼.png") no-repeat center; background-size: contain; content: none; }
 
 @media (max-width: 767px) { .oil .event .event2 .card .video:before { width: 57px; height: 57px; } }
 

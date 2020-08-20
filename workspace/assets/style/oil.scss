@@ -819,7 +819,7 @@
             height: 112px;
             background: url('../images/영상플레이버튼.png') no-repeat center;
             background-size: contain;
-            content:'';
+            content:none;
             @include media-mo() {
               width: 57px;
               height: 57px;
