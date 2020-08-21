@@ -34,11 +34,11 @@
 
 .oil .header .title-desc, .oil .header .big-title { color: #d29467; }
 
-.oil .header .title-desc { position: absolute; top: 54.3%; left: 34.7%; font-size: 31px; font-family: 'serif', serif; line-height: 1.48; }
+.oil .header .title-desc { position: absolute; top: 54.3%; left: 30.4%; font-size: 31px; font-family: 'serif', serif; line-height: 1.48; }
 
-@media (max-width: 767px) { .oil .header .title-desc { font-size: 17.5px; left: 30px; top: auto; bottom: 296px; } }
+@media (max-width: 767px) { .oil .header .title-desc { font-size: 17.5px; left: 35px; top: auto; bottom: 296px; } }
 
-.oil .header .sub-desc { position: absolute; top: 66.2%; left: 34.7%; font-size: 19px; color: rgba(199, 171, 151, 0.63); font-family: 'serif', serif; line-height: 2; }
+.oil .header .sub-desc { position: absolute; top: 66.2%; left: 30.4%; font-size: 19px; color: rgba(199, 171, 151, 0.63); font-family: 'serif', serif; line-height: 2; }
 
 @media (max-width: 767px) { .oil .header .sub-desc { font-size: 12px; letter-spacing: -0.36px; left: 35px; top: auto; bottom: 203px; line-height: 20px; } }
 
@@ -267,7 +267,7 @@
 
 @media (max-width: 767px) { .oil .event .event1 .question .text .underline:after { content: none; } }
 
-.oil .event .event1 .content-wrap { margin-top: 58px; padding-top: 80px; width: 1200px; height: 740px; background: url("../images/이벤트1배경.png") no-repeat center top; background-size: contain; }
+.oil .event .event1 .content-wrap { margin-top: 58px; padding-top: 80px; width: 1200px; height: 662px; background: url("../images/이벤트1배경.png") no-repeat center top; background-size: contain; }
 
 @media (max-width: 767px) { .oil .event .event1 .content-wrap { width: 329px; height: 340px; margin: 25px auto 0 auto; padding-top: 30px; background-size: 329px 333px; } }
 
@@ -420,9 +420,9 @@
 
 @media (max-width: 767px) { .oil .event .tip ul li > span { display: inline-block; margin-top: -3px; line-height: 1.4; } }
 
-.oil .gift-set { padding: 34px 0 95px 0; background: #ebdace; }
+.oil .gift-set { padding: 110px 0 96px 0; background: #ebdace; }
 
-@media (max-width: 767px) { .oil .gift-set { padding-bottom: 42px; } }
+@media (max-width: 767px) { .oil .gift-set { padding-top: 45px; } }
 
 .oil .gift-set .title-img { font-size: 17px; color: #96120e; text-align: center; }
 
@@ -547,7 +547,7 @@
 
 .oil .notice { padding: 55px 0 58px 0; background: #270808; }
 
-@media (max-width: 767px) { .oil .notice { padding: 43px 35px 26px 35px; } }
+@media (max-width: 767px) { .oil .notice { padding: 43px 35px 35px 35px; } }
 
 .oil .notice .title { color: white; font-size: 25px; }
 
@@ -687,7 +687,7 @@
 
 .oil .popup.type2 .content .input-area .input-wrap:last-child { margin-bottom: 0; }
 
-.oil .popup.type2 .content .input-area .input-wrap strong { display: inline-block; width: 99px; font-size: 18px; color: #333; }
+.oil .popup.type2 .content .input-area .input-wrap strong { display: inline-block; width: 135px; font-size: 18px; color: #333; }
 
 @media (max-width: 767px) { .oil .popup.type2 .content .input-area .input-wrap strong { width: 54px; font-size: 15px; } }
 
@@ -943,5 +943,9 @@
 @media (max-width: 767px) { .oil #post_layer #__daum__layer_1 { width: 305px !important; margin: 0 auto !important; } }
 
 .oil #postDimed { display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: url("/assets/images/common/dimed.png"); z-index: 998; }
+
+.oil #url { width: 390px; }
+
+.oil #url .urlbox > button { display: inline-block; vertical-align: top; margin-left: 13px; width: 150px; height: 40px; color: white; font-size: 16px; background: #96120e; text-align: center; line-height: 38px; }
 
 body.is-overflow { overflow: hidden; }

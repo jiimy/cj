@@ -114,13 +114,15 @@
     .title-desc {
       position: absolute;
       top: 54.3%;
-      left: 34.7%;
+      // left: 34.7%;
+      left: 30.4%;
       font-size: 31px;
       @include font(serif);
       line-height: 1.48;
       @include media-mo() {
         font-size: 17.5px;
-        left: 30px;
+        // left: 30px;
+        left: 35px;
         top: auto;
         bottom: 296px;
       }
@@ -128,7 +130,8 @@
     .sub-desc {
       position: absolute;
       top: 66.2%;
-      left: 34.7%;
+      // left: 34.7%;
+      left: 30.4%;
       font-size: 19px;
       color: rgba(#c7ab97, 0.63);
       @include font(serif);
@@ -833,7 +836,8 @@
         margin-top: 58px;
         padding-top: 80px;
         width: 1200px;
-        height: 740px;
+        // height: 740px;
+        height: 662px;
         background:url('../images/이벤트1배경.png') no-repeat center top;
         background-size: contain;
         @include media-mo() {
@@ -1303,10 +1307,11 @@
   }
 
   .gift-set {
-    padding: 34px 0 95px 0;
+    padding: 110px 0 96px 0;
     background: #ebdace;
     @include media-mo() {
-      padding-bottom: 42px;
+      // padding-bottom: 42px;
+      padding-top: 45px;
     }
     .title-img {
       font-size: 17px;
@@ -1688,7 +1693,7 @@
     padding: 55px 0 58px 0;
     background: #270808;
     @include media-mo() {
-      padding: 43px 35px 26px 35px;
+      padding: 43px 35px 35px 35px;
     }
     .title {
       color: white;
@@ -2021,7 +2026,7 @@
             }
             strong {
               display: inline-block;
-              width: 99px;
+              width: 135px;
               font-size: 18px;
               color: #333;
               @include media-mo() {
@@ -2689,6 +2694,24 @@
     height: 100%; 
     background: url('/assets/images/common/dimed.png'); 
     z-index: 998 ; 
+  }
+
+  #url {
+  width: 390px; 
+    .urlbox {
+      > button {
+        display: inline-block; 
+        vertical-align: top; 
+        margin-left: 13px; 
+        width: 150px; 
+        height: 40px; 
+        color: white; 
+        font-size: 16px; 
+        background: #96120e; 
+        text-align: center; 
+        line-height: 38px; 
+      }
+    }
   }
 }
 
