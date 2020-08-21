@@ -234,7 +234,7 @@
       .left {
         width: 63px;
         // animation: text-top-bottom 0.8s backwards 1.2s;
-        animation: text-opacity 0.5s backwards 1.4s;
+        animation: text-opacity 0.8s backwards 2.6s;
         @include media-mo() {
           position: relative;
           width: 39px;
@@ -247,7 +247,7 @@
         position: relative;
         margin-top: -15px;
         width: 89px;
-        animation: text-overlay 1s backwards 0.4s;
+        animation: text-overlay 2.1s backwards 0.5s;
         // animation: text-overlay 0.8s infinite;
         overflow: hidden;
         @include media-mo() {
@@ -255,7 +255,7 @@
           height: 235px;
           margin-top: -48px;
           font-size: 36.5px;
-          animation: text-overlay-m 1s backwards 0.4s;
+          animation: text-overlay-m 2.1s backwards 0.5s;
         }
         
         &:before {
