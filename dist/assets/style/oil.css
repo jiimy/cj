@@ -54,12 +54,12 @@
 
 @media (max-width: 767px) { .oil .header .big-title strong { margin-bottom: 13px; font-size: 48.5px; } }
 
-@keyframes text-top-bottom { 0% { opacity: 0;
-    transform: translateY(-50px); }
-  100% { opacity: 1;
-    transform: translateY(0px); } }
+@keyframes text-overlay { 0% { }
+  100% { } }
 
-.oil .header .big-title .left, .oil .header .big-title .right { display: inline-block; vertical-align: top; animation: text-top-bottom 1s backwards 0.4s; }
+.oil .header .big-title .left, .oil .header .big-title .right { display: inline-block; vertical-align: top; }
+
+.oil .header .big-title .left:before, .oil .header .big-title .right:before { position: absolute; content: ''; }
 
 .oil .header .big-title .left { width: 63px; }
 
@@ -881,19 +881,19 @@
 
 @media (max-width: 767px) { .oil .popup.false-answer .popup__wrap .btn-red { bottom: 45px; width: 200px; height: 43px; line-height: 43px; } }
 
-.oil .popup.sucess .popup__wrap { width: 480px; height: 495px; }
+.oil .popup.success .popup__wrap { width: 480px; height: 495px; }
 
-@media (max-width: 767px) { .oil .popup.sucess .popup__wrap { width: 305px; height: 406px; } }
+@media (max-width: 767px) { .oil .popup.success .popup__wrap { width: 305px; height: 406px; } }
 
-.oil .popup.sucess .popup__wrap strong { display: block; margin-top: 32px; font-size: 35px; }
+.oil .popup.success .popup__wrap strong { display: block; margin-top: 32px; font-size: 35px; }
 
-.oil .popup.sucess .popup__wrap p { margin-top: 29px; font-size: 25px; line-height: 1.5; }
+.oil .popup.success .popup__wrap p { margin-top: 29px; font-size: 25px; line-height: 1.5; }
 
-.oil .popup.sucess .popup__wrap p span { color: #bb140f; }
+.oil .popup.success .popup__wrap p span { color: #bb140f; }
 
-.oil .popup.sucess .popup__wrap .img { display: block; margin: 73px auto 0 auto; width: 121px; height: 172px; background: url("../images/다시생각해보세요팝업제품.png") no-repeat center; background-size: contain; }
+.oil .popup.success .popup__wrap .img { display: block; margin: 73px auto 0 auto; width: 121px; height: 172px; background: url("../images/다시생각해보세요팝업제품.png") no-repeat center; background-size: contain; }
 
-.oil .popup.sucess .popup__wrap .btn-red { width: 320px; height: 70px; line-height: 70px; bottom: 75px; }
+.oil .popup.success .popup__wrap .btn-red { width: 320px; height: 70px; line-height: 70px; bottom: 75px; }
 
 .oil .popup.agree .popup__wrap { width: 720px; height: 510px; }
 
