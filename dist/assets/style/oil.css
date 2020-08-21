@@ -887,13 +887,19 @@
 
 .oil .popup.success .popup__wrap strong { display: block; margin-top: 32px; font-size: 35px; }
 
+@media (max-width: 767px) { .oil .popup.success .popup__wrap strong { margin-top: 14px; font-size: 22px; } }
+
 .oil .popup.success .popup__wrap p { margin-top: 29px; font-size: 25px; line-height: 1.5; }
+
+@media (max-width: 767px) { .oil .popup.success .popup__wrap p { margin-top: 17px; font-size: 16px; } }
 
 .oil .popup.success .popup__wrap p span { color: #bb140f; }
 
 .oil .popup.success .popup__wrap .img { display: block; margin: 73px auto 0 auto; width: 121px; height: 172px; background: url("../images/다시생각해보세요팝업제품.png") no-repeat center; background-size: contain; }
 
 .oil .popup.success .popup__wrap .btn-red { width: 320px; height: 70px; line-height: 70px; bottom: 75px; }
+
+@media (max-width: 767px) { .oil .popup.success .popup__wrap .btn-red { bottom: 45px; width: 200px; height: 43px; line-height: 43px; } }
 
 .oil .popup.agree .popup__wrap { width: 720px; height: 510px; }
 

@@ -2469,11 +2469,19 @@
           display: block;
           margin-top: 32px;
           font-size: 35px;
+          @include media-mo() {
+            margin-top: 14px;
+            font-size: 22px;
+          }
         }
         p {
           margin-top: 29px;
           font-size: 25px;
           line-height: 1.5;
+          @include media-mo() {
+            margin-top: 17px;
+            font-size: 16px;
+          }
           span {
             color: #bb140f;
           }
@@ -2491,6 +2499,12 @@
           height: 70px;
           line-height: 70px;
           bottom: 75px;
+          @include media-mo() {
+            bottom: 45px;
+            width: 200px;
+            height: 43px;
+            line-height: 43px;
+          }
         }
       }
     }
