@@ -202,7 +202,7 @@
       .left, .right {
         display: inline-block;
         vertical-align: top;
-        overflow: hidden;
+        // overflow: hidden;
         
         &:before {
           position: absolute;

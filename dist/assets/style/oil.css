@@ -57,7 +57,7 @@
 @keyframes text-overlay { 0% { }
   100% { } }
 
-.oil .header .big-title .left, .oil .header .big-title .right { display: inline-block; vertical-align: top; overflow: hidden; }
+.oil .header .big-title .left, .oil .header .big-title .right { display: inline-block; vertical-align: top; }
 
 .oil .header .big-title .left:before, .oil .header .big-title .right:before { position: absolute; width: 100%; height: 100%; background: white; z-index: 1; }
 
