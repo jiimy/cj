@@ -22,7 +22,7 @@
 
 .oil .color-red { color: #c93935; }
 
-.oil > * { font-family: 'Noto Sans KR', sans-serif; }
+.oil > * { font-family: 'Noto Sans KR', sans-serif; -webkit-font-smoothing: antialiased; }
 
 .oil .wrapper { margin: 0 auto; max-width: 1200px; height: 100%; }
 

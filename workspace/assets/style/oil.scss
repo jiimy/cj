@@ -86,6 +86,7 @@
   position: relative;
   > * {
     @include font(init);
+    -webkit-font-smoothing: antialiased
   }
   .wrapper {
     margin: 0 auto;
