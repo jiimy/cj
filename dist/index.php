@@ -68,7 +68,7 @@
               <li class="m-flex">
                 <div class="img"></div>
                 <div class="text">
-                  <span class="pin">한정판</span><strong>백설 고소함 가득 참기름</strong>
+                  <span class="pin">한정판</span><strong c>백설 고소함 가득 참기름</strong>
                   <p>
                     프리미엄 친환경 세트 <br class="m-layer">(20명)
                   </p>
@@ -279,7 +279,7 @@
     </div>
     <footer class="footer">
       <div class="wrapper">
-        <ul>
+        <ul class="pc-layer">
           <li class="adress">
             <strong>씨제이제일제당(주)</strong>
             <div class="bar"></div>서울특별시 중구 동호로 330 CJ 제일제당센터 (우)04560
@@ -290,6 +290,21 @@
             <strong>대표전화</strong>02-6740-1114 <div class="bar"></div>
             <strong>사업자등록번호</strong>104-86-09535 <div class="bar"></div>
             <strong>개인정보보호책임자</strong>조영민 <div class="bar"></div>
+            <strong>고객행복센터</strong>080-850-1200
+          </li>
+        </ul>
+        <ul class="mo-layer">
+          <li class="adress">
+            <strong>씨제이제일제당(주)</strong>
+            서울특별시 중구 동호로 330 CJ 제일제당센터 (우)04560
+          </li>
+          <li class="name">
+            <strong>대표자</strong>강신호
+          </li>
+          <li class="info">
+            <strong>대표전화</strong><span>02-6740-1114</span>
+            <strong>사업자등록번호</strong>104-86-09535
+            <strong>개인정보보호책임자</strong><span>조영민</span>
             <strong>고객행복센터</strong>080-850-1200
           </li>
         </ul>
@@ -435,14 +450,14 @@
             <div class="list list2 none">
               <div class="list-title">[ 두번째, <span>깁밥 말기</span> ]</div>
               <ul>
-                <li><span>따뜻한 흰 쌀밥에 분량의 맛소금, 참기름, 통깨를 넣고 <br>골고루 섞어 간한다.</li>
+                <li><span>따뜻한 흰 쌀밥에 분량의 맛소금, 참기름, 통깨를 넣고 <br class="pc-layer">골고루 섞어 간한다.</li>
                 <li><span>
                   당근은 채 썰어 참기름(1T)을 두른 팬에서 소금간 <br>약간 하여 살짝 볶아 준비한다.
                 </span>
                 </li>
                 <li><span>김밥 김에 잡채를 길이에 맞게 길게 올린 뒤 <br>돌돌 말아준다. <br>※ 이때 잡채 사이 빈 공간이 생기지 않게 탄탄하게 당겨 말아주세요!</span></li>
                 <li><span>다른 김밥 김을 바닥에 깔고 간한 밥을 넓게 펼쳐 올린다.</span></li>
-                <li><span>밥 위에 김밥 김에 말아준 잡채, 단무지, 우엉, 지단 채, <br>볶은 당근을 가지런히 올려 돌돌 말아준다.</span></li>
+                <li><span>밥 위에 김밥 김에 말아준 잡채, 단무지, 우엉, 지단 채, <br class="pc-layer">볶은 당근을 가지런히 올려 돌돌 말아준다.</span></li>
                 <li><span>김밥 윗면에 참기름을 바르고 통깨를 뿌린 뒤 한입 크기로 자른다.</span></li>
               </ul>
             </div>
