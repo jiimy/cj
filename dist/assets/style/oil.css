@@ -42,7 +42,7 @@
 
 @media (max-width: 767px) { .oil .header .sub-desc { font-size: 12px; letter-spacing: -0.36px; left: 35px; top: auto; bottom: 203px; line-height: 20px; } }
 
-.oil .header .big-title { position: absolute; top: 192px; right: 155px; font-size: 68px; font-family: 'serif', serif; }
+.oil .header .big-title { position: absolute; top: 192px; right: 97px; font-size: 68px; font-family: 'serif', serif; }
 
 @media (max-width: 767px) { .oil .header .big-title { top: 154px; right: 55px; font-size: initial; } }
 
@@ -50,7 +50,7 @@
 
 @media (max-width: 767px) { .oil .header .big-title:before { width: 63px; height: 57px; left: 19px; } }
 
-.oil .header .big-title strong { position: relative; display: inline-block; margin-bottom: 20px; left: -7px; font-size: 89px; font-weight: 500; }
+.oil .header .big-title strong { position: relative; display: inline-block; margin-bottom: 20px; font-size: 89px; font-weight: 500; }
 
 @media (max-width: 767px) { .oil .header .big-title strong { margin-bottom: 13px; font-size: 48.5px; } }
 
@@ -65,11 +65,11 @@
 
 @media (max-width: 767px) { .oil .header .big-title .left { position: relative; width: 39px; top: -40px; font-size: 37px; } }
 
-.oil .header .big-title .right { position: relative; margin-top: -15px; width: 27px; }
+.oil .header .big-title .right { position: relative; margin-top: -15px; width: 89px; }
 
-@media (max-width: 767px) { .oil .header .big-title .right { width: 47px; height: 235px; margin-top: -48px; font-size: 36.5px; }
-  .oil .header .big-title .right strong { left: 0; }
-  .oil .header .big-title .right span { position: relative; left: 7px; } }
+@media (max-width: 767px) { .oil .header .big-title .right { width: 47px; height: 235px; margin-top: -48px; font-size: 36.5px; } }
+
+.oil .header .big-title .right span { position: relative; left: 7px; }
 
 .oil .special-event { padding: 112px 0 110px 0; background: #e2cdc3; }
 

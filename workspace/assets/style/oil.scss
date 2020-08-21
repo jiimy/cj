@@ -145,7 +145,7 @@
     .big-title {
       position: absolute;
       top: 192px;
-      right: 155px;
+      right: 97px;
       font-size: 68px;
       @include font(serif);
       // animation: from-down 0.6s forwards;
@@ -173,7 +173,6 @@
         position: relative;
         display: inline-block;
         margin-bottom: 20px;
-        left: -7px;
         font-size: 89px;
         font-weight: 500;
         @include media-mo() {
@@ -227,19 +226,18 @@
       .right{
         position: relative;
         margin-top: -15px;
-        width: 27px;
+        width: 89px;
         // animation: text-top-bottom 0.8s backwards 0.4s;
         @include media-mo() {
           width: 47px;
           height: 235px;
           margin-top: -48px;
           font-size: 36.5px;
-          strong {
-            left: 0;
-          }
-          span {
-            position: relative;
-            left: 7px;
+        }
+        span {
+          position: relative;
+          left: 7px;
+          @include media-mo() {
           }
         }
       }
