@@ -71,7 +71,7 @@
 
 .oil .header .big-title .right { position: relative; margin-top: -15px; width: 89px; animation: text-opacity 2.1s backwards 2s; overflow: hidden; }
 
-@media (max-width: 767px) { .oil .header .big-title .right { width: 47px; height: 235px; margin-top: -48px; font-size: 36.5px; animation: text-opacity 2.1s backwards 0.5s; } }
+@media (max-width: 767px) { .oil .header .big-title .right { width: 47px; height: 235px; margin-top: -48px; font-size: 36.5px; animation: text-overlay-m 2.1s backwards 0.5s; } }
 
 .oil .header .big-title .right:before { position: absolute; width: 100%; background: linear-gradient(0deg, #4a1b17 0%, rgba(30, 22, 73, 0) 100%); bottom: 0; z-index: 1; content: ''; }
 
