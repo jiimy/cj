@@ -828,8 +828,11 @@
             width: 66px;
             height: 82px;
             margin-right: 2px;
-            font-size: 64px;
-            padding-left: 4px;
+            // font-size: 64px;
+            font-size: 45px;
+            // padding-left: 4px;
+            padding: 10px;
+            box-sizing: border-box;
             border-radius: 5px;
             vertical-align: top;
           }
@@ -842,7 +845,12 @@
             font-weight: 400;
             font-size: 160px;
             @include media-mo() {
-              font-size: 64px;
+              // font-size: 64px;
+              color: #ccc4bf; 
+              font-family: 'Noto Sans KR', sans-serif; 
+              font-weight: 400; 
+              font-size: 45px; 
+              line-height: 65px;
             }
           }
         }
