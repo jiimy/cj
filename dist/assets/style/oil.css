@@ -396,7 +396,7 @@
 
 .oil .event .tip__title strong { font-weight: 500; }
 
-.oil .event .tip ul { position: relative; left: 7px; padding-left: 14px; max-width: 954px; margin: 34px auto 0 auto; font-size: 20px; color: white; font-weight: 300; }
+.oil .event .tip ul { position: relative; left: 7px; padding-left: 14px; max-width: 964px; margin: 34px auto 0 auto; font-size: 20px; color: white; font-weight: 300; }
 
 @media (max-width: 767px) { .oil .event .tip ul { margin: 0px auto 0 auto; max-width: 263px; font-size: 13.5px; color: rgba(255, 255, 255, 0.8); line-height: 1.67; letter-spacing: -0.34px; } }
 
@@ -751,7 +751,7 @@
 
 .oil .popup__wrap .btn-popup-next { width: 0; height: 0; border-bottom: 170px solid #96120e; border-left: 170px solid #f1e8e2; right: 0; bottom: 0; font-size: 24px; color: white; }
 
-@media (max-width: 767px) { .oil .popup__wrap .btn-popup-next { border-width: 117px; font-size: 15px; z-index: 1; }
+@media (max-width: 767px) { .oil .popup__wrap .btn-popup-next { border-width: 117px; font-size: 15px; z-index: 0; }
   .oil .popup__wrap .btn-popup-next:focus { outline: none; } }
 
 .oil .popup__wrap .btn-popup-next span { position: absolute; bottom: -136px; right: 26px; }
@@ -830,7 +830,7 @@
 
 @media (max-width: 767px) { .oil .popup.recipe .popup__wrap .list li:before { width: 18px; height: 18px; font-size: 10px; line-height: 18px; } }
 
-.oil .popup.recipe .popup__wrap .list li span { margin-top: 4px; display: inline-block; vertical-align: top; max-width: calc(100% - 40px); letter-spacing: -0.5px; }
+.oil .popup.recipe .popup__wrap .list li span { margin-top: 4px; display: inline-block; vertical-align: top; max-width: calc(100% - 40px); letter-spacing: -0.9px; }
 
 @media (max-width: 767px) { .oil .popup.recipe .popup__wrap .list li span { max-width: calc(100% - 30px); letter-spacing: -0.28px; margin-top: 0; font-size: 11px; } }
 
@@ -839,6 +839,8 @@
 @media (max-width: 767px) { .oil .popup.recipe1 .list0 .title { padding: 6px 14px; font-size: 12px; } }
 
 .oil .popup.recipe1 .list0 .title span { color: #000; }
+
+.oil .popup.recipe1 .list0 .color { display: inline-block; color: #a6413d; font-weight: 600; vertical-align: top; margin-top: 7px; margin-left: 4px; }
 
 .oil .popup.recipe1 .list0 .text { margin-top: 14px; line-height: 1.5; }
 
@@ -906,7 +908,7 @@
 
 @media (max-width: 767px) { .oil .popup.success .popup__wrap strong { margin-top: 14px; font-size: 22px; } }
 
-.oil .popup.success .popup__wrap p { margin-top: 29px; font-size: 25px; line-height: 1.5; }
+.oil .popup.success .popup__wrap p { margin-top: 29px; font-size: 25px; line-height: 1.5; letter-spacing: -0.9px; }
 
 @media (max-width: 767px) { .oil .popup.success .popup__wrap p { margin-top: 17px; font-size: 16px; } }
 

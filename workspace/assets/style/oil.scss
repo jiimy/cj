@@ -1237,7 +1237,7 @@
         position: relative;
         left: 7px;
         padding-left: 14px;
-        max-width: 954px;
+        max-width: 964px;
         margin: 34px auto 0 auto;
         font-size: 20px;
         color: white;
@@ -2203,7 +2203,7 @@
         @include media-mo() {
           border-width: 117px;
           font-size: 15px;
-          z-index: 1;
+          z-index: 0;
           &:focus {
             outline: none;
           }
@@ -2377,7 +2377,7 @@
               display: inline-block;
               vertical-align: top;
               max-width: calc(100% - 40px);
-              letter-spacing: -0.5px;
+              letter-spacing: -0.9px;
               @include media-mo() {
                 max-width: calc(100% - 30px);
                 letter-spacing: -0.28px;
@@ -2406,6 +2406,14 @@
           span {
             color: #000;
           }
+        }
+        .color {
+          display: inline-block;
+          color: #a6413d;
+          font-weight: 600;
+          vertical-align: top;
+          margin-top: 7px;
+          margin-left: 4px;
         }
         .text {
           margin-top: 14px;
@@ -2568,6 +2576,7 @@
           margin-top: 29px;
           font-size: 25px;
           line-height: 1.5;
+          letter-spacing: -0.9px;
           @include media-mo() {
             margin-top: 17px;
             font-size: 16px;
