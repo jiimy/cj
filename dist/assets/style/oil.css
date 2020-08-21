@@ -65,7 +65,7 @@
 @keyframes text-opacity { 0% { opacity: 0; }
   100% { opacity: 1; } }
 
-.oil .header .big-title .left { width: 63px; animation: text-opacity 0.8s backwards 2.6s; }
+.oil .header .big-title .left { width: 63px; animation: text-opacity 0.8s backwards 4.1s; }
 
 @media (max-width: 767px) { .oil .header .big-title .left { position: relative; width: 39px; top: -40px; font-size: 37px; } }
 
