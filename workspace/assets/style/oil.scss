@@ -590,6 +590,7 @@
           text-align: center;
           font-size: 19px;
           font-weight: 600;
+          white-space: nowrap;
           @include media-mo() {
             position: static;
             font-size: 14.5px;
@@ -2602,11 +2603,15 @@
       font-size: 13px; 
       color: #fff; 
       background: #000;
+      @include media-mo() {
+        right: 47px!important;
+        top: -48px!important;
+      }
     }
     #__daum__layer_1 {
       @include media-mo() {
-        width: 305px;
-        margin: 0 auto;
+        width: 305px!important;
+        margin: 0 auto!important;
       }
     }
   }
