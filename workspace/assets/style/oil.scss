@@ -611,6 +611,7 @@
   .event {
     padding: 110px 0 104px 0;
     background: url('../images/이벤트부분검은배경.png') no-repeat center 0;
+    background-size:100% 100%;
     @include media-mo() {
       padding: 47px 0 30px 0;
       background: url('../images/이벤트부분검은배경-m360.png') no-repeat center 0;
@@ -1738,42 +1739,7 @@
     &.block {
       display: block;
     }
-    &.sucess {
-      .popup__wrap {
-        width: 480px;
-        height: 495px;
-        @include media-mo() {
-          width: 100%;
-        }
-        strong {
-          display: block;
-          margin-top: 32px;
-          font-size: 35px;
-        }
-        p {
-          margin-top: 29px;
-          font-size: 25px;
-          line-height: 1.5;
-          span {
-            color: #bb140f;
-          }
-        }
-        .img {
-          display: block; 
-          margin: 73px auto 0 auto; 
-          width: 121px; 
-          height: 172px; 
-          background: url("../images/다시생각해보세요팝업제품.png") no-repeat center; 
-          background-size: contain;
-        }
-        .btn-red {
-          width: 320px;
-          height: 70px;
-          line-height: 70px;
-          bottom: 75px;
-        }
-      }
-    }
+    
     &.type1 {
       .close-btn {
         background: url('../images/팝업닫기버튼-블랙.png');
@@ -1788,13 +1754,21 @@
       .close-btn {
         background: url('../images/팝업닫기버튼-화이트.png');
         background-size: contain;
+        @include media-mo() {
+          display: none;
+        }
+      }
+      .close-btn2 {
+        @include media-mo() {
+          display: none;
+        }
       }
       .popup__wrap {
         width: 860px;
         height: 763px;
         @include media-mo() {
           width: 305px;
-          height: 498px;
+          height: 548px;
           .btn-wrap {
             bottom: 32px;
           }
@@ -2020,7 +1994,11 @@
               .address-detail2 {
                 width: 260px;
                 margin-left: 10px;
-                // width: 589px;
+                @include media-mo() {
+                  margin-top: 9px;
+                  width: 210px;
+                  margin-left: 53px;
+                }
               }
             }
           }
@@ -2125,6 +2103,9 @@
           border-width: 117px;
           font-size: 15px;
           z-index: 1;
+          &:focus {
+            outline: none;
+          }
         }
         span {
           position: absolute ;
@@ -2462,6 +2443,43 @@
         }
       }
     }
+    &.sucess {
+      .popup__wrap {
+        width: 480px;
+        height: 495px;
+        @include media-mo() {
+          width: 305px;
+          height: 406px;
+        }
+        strong {
+          display: block;
+          margin-top: 32px;
+          font-size: 35px;
+        }
+        p {
+          margin-top: 29px;
+          font-size: 25px;
+          line-height: 1.5;
+          span {
+            color: #bb140f;
+          }
+        }
+        .img {
+          display: block; 
+          margin: 73px auto 0 auto; 
+          width: 121px; 
+          height: 172px; 
+          background: url("../images/다시생각해보세요팝업제품.png") no-repeat center; 
+          background-size: contain;
+        }
+        .btn-red {
+          width: 320px;
+          height: 70px;
+          line-height: 70px;
+          bottom: 75px;
+        }
+      }
+    }
     &.agree {
       .popup__wrap {
         width: 720px;
@@ -2500,6 +2518,44 @@
       }
     }
   }
+  #post_layer { 
+    display: none; 
+    position: fixed; 
+    left:50%; 
+    top:50%; 
+    margin: -235px 0 0 -200px; 
+    width: 400px; 
+    height: 470px; 
+    border: solid 1px #000; 
+    z-index: 999; 
+    .btn_close {
+      position: absolute; 
+      right:-48px; 
+      top: -1px; 
+      width: 48px; 
+      height: 48px; 
+      font-size: 13px; 
+      color: #fff; 
+      background: #000;
+    }
+    #__daum__layer_1 {
+      @include media-mo() {
+        width: 305px;
+        margin: 0 auto;
+      }
+    }
+  }
+  
+  #postDimed { 
+    display: none; 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: url('/assets/images/common/dimed.png'); 
+    z-index: 998 ; 
+  }
 }
 
 body {
@@ -2508,36 +2564,5 @@ body {
   }
 }
 
-#post_layer { 
-  display: none; 
-  position: fixed; 
-  left:50%; 
-  top:50%; 
-  margin: -235px 0 0 -200px; 
-  width: 400px; 
-  height: 470px; 
-  border: solid 1px #000; 
-  z-index: 999; 
-  .btn_close {
-    position: absolute; 
-    right:-48px; 
-    top: -1px; 
-    width: 48px; 
-    height: 48px; 
-    font-size: 13px; 
-    color: #fff; 
-    background: #000;
-  }
-}
 
-#postDimed { 
-  display: none; 
-  position: fixed; 
-  left: 0; 
-  top: 0; 
-  width: 100%; 
-  height: 100%; 
-  background: url('/assets/images/common/dimed.png'); 
-  z-index: 998 ; 
-}
 

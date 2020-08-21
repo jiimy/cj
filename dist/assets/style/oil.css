@@ -203,7 +203,7 @@
 
 @media (max-width: 767px) { .oil .special-event .card-wrap .card .text .comment { position: absolute; right: -104%; bottom: -19px; white-space: nowrap; font-size: 10.5px; letter-spacing: -0.26px; } }
 
-.oil .event { padding: 110px 0 104px 0; background: url("../images/이벤트부분검은배경.png") no-repeat center 0; }
+.oil .event { padding: 110px 0 104px 0; background: url("../images/이벤트부분검은배경.png") no-repeat center 0; background-size: 100% 100%; }
 
 @media (max-width: 767px) { .oil .event { padding: 47px 0 30px 0; background: url("../images/이벤트부분검은배경-m360.png") no-repeat center 0; background-size: 100% 100%; } }
 
@@ -591,29 +591,19 @@
 
 .oil .popup.block { display: block; }
 
-.oil .popup.sucess .popup__wrap { width: 480px; height: 495px; }
-
-@media (max-width: 767px) { .oil .popup.sucess .popup__wrap { width: 100%; } }
-
-.oil .popup.sucess .popup__wrap strong { display: block; margin-top: 32px; font-size: 35px; }
-
-.oil .popup.sucess .popup__wrap p { margin-top: 29px; font-size: 25px; line-height: 1.5; }
-
-.oil .popup.sucess .popup__wrap p span { color: #bb140f; }
-
-.oil .popup.sucess .popup__wrap .img { display: block; margin: 73px auto 0 auto; width: 121px; height: 172px; background: url("../images/다시생각해보세요팝업제품.png") no-repeat center; background-size: contain; }
-
-.oil .popup.sucess .popup__wrap .btn-red { width: 320px; height: 70px; line-height: 70px; bottom: 75px; }
-
 .oil .popup.type1 .close-btn { background: url("../images/팝업닫기버튼-블랙.png"); background-size: contain; }
 
 .oil .popup.type1 .close-btn2 { background: url("../images/팝업닫기버튼-블랙.png"); background-size: contain; }
 
 .oil .popup.type2 .close-btn { background: url("../images/팝업닫기버튼-화이트.png"); background-size: contain; }
 
+@media (max-width: 767px) { .oil .popup.type2 .close-btn { display: none; } }
+
+@media (max-width: 767px) { .oil .popup.type2 .close-btn2 { display: none; } }
+
 .oil .popup.type2 .popup__wrap { width: 860px; height: 763px; }
 
-@media (max-width: 767px) { .oil .popup.type2 .popup__wrap { width: 305px; height: 498px; }
+@media (max-width: 767px) { .oil .popup.type2 .popup__wrap { width: 305px; height: 548px; }
   .oil .popup.type2 .popup__wrap .btn-wrap { bottom: 32px; } }
 
 .oil .popup.type2 .title { padding: 44px 0 42px 0; color: white; background: #96120e; }
@@ -712,6 +702,8 @@
 
 .oil .popup.type2 .content .input-area .input-wrap.adress-detail .address-detail2 { width: 260px; margin-left: 10px; }
 
+@media (max-width: 767px) { .oil .popup.type2 .content .input-area .input-wrap.adress-detail .address-detail2 { margin-top: 9px; width: 210px; margin-left: 53px; } }
+
 @media (max-width: 767px) { .oil .popup.type2 .btn-red { width: 135px; height: 43px; } }
 
 .oil .popup__inner { overflow-y: auto; height: 100%; text-align: center; }
@@ -742,7 +734,8 @@
 
 .oil .popup__wrap .btn-popup-next { width: 0; height: 0; border-bottom: 170px solid #96120e; border-left: 170px solid #f1e8e2; right: 0; bottom: 0; font-size: 24px; color: white; }
 
-@media (max-width: 767px) { .oil .popup__wrap .btn-popup-next { border-width: 117px; font-size: 15px; z-index: 1; } }
+@media (max-width: 767px) { .oil .popup__wrap .btn-popup-next { border-width: 117px; font-size: 15px; z-index: 1; }
+  .oil .popup__wrap .btn-popup-next:focus { outline: none; } }
 
 .oil .popup__wrap .btn-popup-next span { position: absolute; bottom: -136px; right: 26px; }
 
@@ -888,6 +881,20 @@
 
 @media (max-width: 767px) { .oil .popup.false-answer .popup__wrap .btn-red { bottom: 45px; width: 200px; height: 43px; line-height: 43px; } }
 
+.oil .popup.sucess .popup__wrap { width: 480px; height: 495px; }
+
+@media (max-width: 767px) { .oil .popup.sucess .popup__wrap { width: 305px; height: 406px; } }
+
+.oil .popup.sucess .popup__wrap strong { display: block; margin-top: 32px; font-size: 35px; }
+
+.oil .popup.sucess .popup__wrap p { margin-top: 29px; font-size: 25px; line-height: 1.5; }
+
+.oil .popup.sucess .popup__wrap p span { color: #bb140f; }
+
+.oil .popup.sucess .popup__wrap .img { display: block; margin: 73px auto 0 auto; width: 121px; height: 172px; background: url("../images/다시생각해보세요팝업제품.png") no-repeat center; background-size: contain; }
+
+.oil .popup.sucess .popup__wrap .btn-red { width: 320px; height: 70px; line-height: 70px; bottom: 75px; }
+
 .oil .popup.agree .popup__wrap { width: 720px; height: 510px; }
 
 @media (max-width: 767px) { .oil .popup.agree .popup__wrap { width: 305px; height: 363px; } }
@@ -900,10 +907,12 @@
 
 @media (max-width: 767px) { .oil .popup.agree .popup__wrap p { margin-top: 23px; font-size: 16px; } }
 
+.oil #post_layer { display: none; position: fixed; left: 50%; top: 50%; margin: -235px 0 0 -200px; width: 400px; height: 470px; border: solid 1px #000; z-index: 999; }
+
+.oil #post_layer .btn_close { position: absolute; right: -48px; top: -1px; width: 48px; height: 48px; font-size: 13px; color: #fff; background: #000; }
+
+@media (max-width: 767px) { .oil #post_layer #__daum__layer_1 { width: 305px; margin: 0 auto; } }
+
+.oil #postDimed { display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: url("/assets/images/common/dimed.png"); z-index: 998; }
+
 body.is-overflow { overflow: hidden; }
-
-#post_layer { display: none; position: fixed; left: 50%; top: 50%; margin: -235px 0 0 -200px; width: 400px; height: 470px; border: solid 1px #000; z-index: 999; }
-
-#post_layer .btn_close { position: absolute; right: -48px; top: -1px; width: 48px; height: 48px; font-size: 13px; color: #fff; background: #000; }
-
-#postDimed { display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: url("/assets/images/common/dimed.png"); z-index: 998; }
