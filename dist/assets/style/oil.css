@@ -57,17 +57,19 @@
 @keyframes text-overlay { 0% { }
   100% { } }
 
-.oil .header .big-title .left, .oil .header .big-title .right { display: inline-block; vertical-align: top; }
+.oil .header .big-title .left, .oil .header .big-title .right { display: inline-block; vertical-align: top; overflow: hidden; }
 
-.oil .header .big-title .left:before, .oil .header .big-title .right:before { position: absolute; content: ''; }
+.oil .header .big-title .left:before, .oil .header .big-title .right:before { position: absolute; width: 100%; height: 100%; background: white; z-index: 1; }
 
 .oil .header .big-title .left { width: 63px; }
 
-@media (max-width: 767px) { .oil .header .big-title .left { position: relative; width: 49px; top: -40px; font-size: 37px; } }
+@media (max-width: 767px) { .oil .header .big-title .left { position: relative; width: 39px; top: -40px; font-size: 37px; } }
 
-.oil .header .big-title .right { width: 27px; margin-top: -15px; }
+.oil .header .big-title .right { position: relative; margin-top: -15px; width: 27px; }
 
-@media (max-width: 767px) { .oil .header .big-title .right { margin-top: -48px; font-size: 36.5px; } }
+@media (max-width: 767px) { .oil .header .big-title .right { width: 47px; height: 235px; margin-top: -48px; font-size: 36.5px; }
+  .oil .header .big-title .right strong { left: 0; }
+  .oil .header .big-title .right span { position: relative; left: 7px; } }
 
 .oil .special-event { padding: 112px 0 110px 0; background: #e2cdc3; }
 
@@ -128,6 +130,10 @@
 .oil .special-event .card-wrap .card.left .img { position: absolute; top: -42px; left: 23px; width: 356px; height: 258px; background: url("../images/스페셜아이템1.png") no-repeat center; background-size: contain; }
 
 @media (max-width: 767px) { .oil .special-event .card-wrap .card.left .img { position: static; margin-top: -5px; width: 150px; height: 119px; background: url("../images/스페셜아이템1-m360.png") no-repeat center; background-size: 150px 119px; } }
+
+.oil .special-event .card-wrap .card.left .img .comment { display: none; margin-top: 6px; color: #a76c51; font-size: 16px; }
+
+@media (max-width: 767px) { .oil .special-event .card-wrap .card.left .img .comment { display: block; position: absolute; right: 17px; bottom: -19px; white-space: nowrap; font-size: 10.5px; letter-spacing: -0.26px; } }
 
 .oil .special-event .card-wrap .card.right { width: 800px; }
 
@@ -201,7 +207,7 @@
 
 .oil .special-event .card-wrap .card .text .comment { display: block; margin-top: 6px; color: #a76c51; font-size: 16px; }
 
-@media (max-width: 767px) { .oil .special-event .card-wrap .card .text .comment { position: absolute; right: -104%; bottom: -19px; white-space: nowrap; font-size: 10.5px; letter-spacing: -0.26px; } }
+@media (max-width: 767px) { .oil .special-event .card-wrap .card .text .comment { display: none; position: absolute; right: -104%; bottom: -19px; white-space: nowrap; font-size: 10.5px; letter-spacing: -0.26px; } }
 
 .oil .event { padding: 110px 0 104px 0; background: url("../images/이벤트부분검은배경.png") no-repeat center 0; background-size: 100% 100%; }
 
@@ -271,7 +277,8 @@
 
 .oil .event .event1 button { display: block; margin: 76px auto 0 auto; min-width: 420px; height: 95px; background: #96120e; border-radius: 10vw; color: white; font-size: 28px; }
 
-@media (max-width: 767px) { .oil .event .event1 button { margin-top: 24px; min-width: 211px; height: 49px; font-size: 17.5px; } }
+@media (max-width: 767px) { .oil .event .event1 button { margin-top: 24px; min-width: 211px; height: 49px; font-size: 17.5px; }
+  .oil .event .event1 button:before { display: inline-block; height: 100%; vertical-align: middle; content: ''; } }
 
 .oil .event .event1 button span { display: inline-block; vertical-align: middle; }
 

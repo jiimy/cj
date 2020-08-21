@@ -141,7 +141,6 @@
         line-height: 20px;
       }
     }
-    
     .big-title {
       position: absolute;
       top: 192px;
@@ -202,9 +201,15 @@
       .left, .right {
         display: inline-block;
         vertical-align: top;
+        overflow: hidden;
+        
         &:before {
           position: absolute;
-          content:'';
+          width:100%;
+          height: 100%;
+          background: white;
+          z-index: 1;
+          // content:'';
         }
       }
       .left {
@@ -213,18 +218,28 @@
         &:before {}
         @include media-mo() {
           position: relative;
-          width: 49px;
+          width: 39px;
           top: -40px;
           font-size: 37px;
         }
       }
       .right{
-        width: 27px;
+        position: relative;
         margin-top: -15px;
+        width: 27px;
         // animation: text-top-bottom 0.8s backwards 0.4s;
         @include media-mo() {
+          width: 47px;
+          height: 235px;
           margin-top: -48px;
           font-size: 36.5px;
+          strong {
+            left: 0;
+          }
+          span {
+            position: relative;
+            left: 7px;
+          }
         }
       }
     }
@@ -400,6 +415,21 @@
               height: 119px;
               background: url('#{$img-root}스페셜아이템1-m360.png') no-repeat center;
               background-size: 150px 119px;
+            }
+            .comment {
+              display: none;
+              margin-top: 6px;
+              color: #a76c51;
+              font-size: 16px;
+              @include media-mo() {
+                display: block;
+                position: absolute;
+                right: 17px;
+                bottom: -19px;
+                white-space: nowrap;
+                font-size: 10.5px;
+                letter-spacing: -0.26px;
+              }
             }
           }
         }
@@ -609,6 +639,7 @@
             color: #a76c51;
             font-size: 16px;
             @include media-mo() {
+              display: none;
               position: absolute;
               right: -104%;
               bottom: -19px;
@@ -825,6 +856,12 @@
           min-width: 211px;
           height: 49px;
           font-size: 17.5px;
+          &:before {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            content:'';
+          }
         }
         span {
           display: inline-block;
