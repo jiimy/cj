@@ -234,13 +234,13 @@
       .left {
         width: 63px;
         // animation: text-top-bottom 0.8s backwards 1.2s;
-        animation: text-opacity 0.8s backwards 4.1s;
+        animation: text-opacity 1s backwards 1.7s;
         @include media-mo() {
           position: relative;
           width: 39px;
           top: -40px;
           font-size: 37px;
-          animation: text-opacity 0.5s backwards 2.1s;
+          animation: text-opacity 0.5s backwards 0.6s;
         }
       }
       
@@ -248,7 +248,7 @@
         position: relative;
         margin-top: -15px;
         width: 89px;
-        animation: text-opacity 2.1s backwards 2s;
+        animation: text-opacity 2.1s backwards 0.6s;
         // animation: text-overlay 0.8s infinite;
         overflow: hidden;
         @include media-mo() {

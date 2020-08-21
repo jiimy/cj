@@ -65,11 +65,11 @@
 @keyframes text-opacity { 0% { opacity: 0; }
   100% { opacity: 1; } }
 
-.oil .header .big-title .left { width: 63px; animation: text-opacity 0.8s backwards 4.1s; }
+.oil .header .big-title .left { width: 63px; animation: text-opacity 1s backwards 1.7s; }
 
-@media (max-width: 767px) { .oil .header .big-title .left { position: relative; width: 39px; top: -40px; font-size: 37px; animation: text-opacity 0.5s backwards 2.1s; } }
+@media (max-width: 767px) { .oil .header .big-title .left { position: relative; width: 39px; top: -40px; font-size: 37px; animation: text-opacity 0.5s backwards 0.6s; } }
 
-.oil .header .big-title .right { position: relative; margin-top: -15px; width: 89px; animation: text-opacity 2.1s backwards 2s; overflow: hidden; }
+.oil .header .big-title .right { position: relative; margin-top: -15px; width: 89px; animation: text-opacity 2.1s backwards 0.6s; overflow: hidden; }
 
 @media (max-width: 767px) { .oil .header .big-title .right { width: 47px; height: 235px; margin-top: -48px; font-size: 36.5px; animation: text-overlay-m 2.1s backwards 0.5s; } }
 
