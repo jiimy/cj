@@ -2311,10 +2311,12 @@
           }
         }
         .list {
+          position: relative;
           display: inline-block;
           vertical-align: top;
           // max-width: calc(100% - 485px);
           width: 435px;
+          z-index: 1;
           @include media-mo() {
             width: auto;
             padding: 0px 27px 0 27px;
@@ -2374,6 +2376,7 @@
               display: inline-block;
               vertical-align: top;
               max-width: calc(100% - 40px);
+              letter-spacing: -0.5px;
               @include media-mo() {
                 max-width: calc(100% - 30px);
                 letter-spacing: -0.28px;

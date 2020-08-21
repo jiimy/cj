@@ -790,7 +790,7 @@
 
 .oil .popup.recipe .popup__wrap .video:before { position: absolute; right: 0; left: 0; top: 0; bottom: 0; margin: auto; width: 112px; height: 112px; background: url("../images/영상플레이버튼.png") no-repeat center; background-size: contain; content: none; }
 
-.oil .popup.recipe .popup__wrap .list { display: inline-block; vertical-align: top; width: 435px; text-align: left; }
+.oil .popup.recipe .popup__wrap .list { position: relative; display: inline-block; vertical-align: top; width: 435px; z-index: 1; text-align: left; }
 
 @media (max-width: 767px) { .oil .popup.recipe .popup__wrap .list { width: auto; padding: 0px 27px 0 27px; } }
 
@@ -830,7 +830,7 @@
 
 @media (max-width: 767px) { .oil .popup.recipe .popup__wrap .list li:before { width: 18px; height: 18px; font-size: 10px; line-height: 18px; } }
 
-.oil .popup.recipe .popup__wrap .list li span { margin-top: 4px; display: inline-block; vertical-align: top; max-width: calc(100% - 40px); }
+.oil .popup.recipe .popup__wrap .list li span { margin-top: 4px; display: inline-block; vertical-align: top; max-width: calc(100% - 40px); letter-spacing: -0.5px; }
 
 @media (max-width: 767px) { .oil .popup.recipe .popup__wrap .list li span { max-width: calc(100% - 30px); letter-spacing: -0.28px; margin-top: 0; font-size: 11px; } }
 
