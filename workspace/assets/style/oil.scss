@@ -831,6 +831,7 @@
             font-size: 64px;
             padding-left: 4px;
             border-radius: 5px;
+            vertical-align: top;
           }
           &:last-child {
             margin-right: 0;
@@ -839,6 +840,10 @@
             color: #ccc4bf;
             @include font;
             font-weight: 400;
+            font-size: 160px;
+            @include media-mo() {
+              font-size: 64px;
+            }
           }
         }
       }

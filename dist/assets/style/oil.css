@@ -269,11 +269,13 @@
 
 .oil .event .event1 .content-wrap input { display: inline-block; margin-right: 5px; padding-left: 10px; width: 170px; height: 200px; border-radius: 20px; background: #f1e8e2; font-size: 160px; box-sizing: border-box; font-weight: 600; }
 
-@media (max-width: 767px) { .oil .event .event1 .content-wrap input { width: 66px; height: 82px; margin-right: 2px; font-size: 64px; padding-left: 4px; border-radius: 5px; } }
+@media (max-width: 767px) { .oil .event .event1 .content-wrap input { width: 66px; height: 82px; margin-right: 2px; font-size: 64px; padding-left: 4px; border-radius: 5px; vertical-align: top; } }
 
 .oil .event .event1 .content-wrap input:last-child { margin-right: 0; }
 
-.oil .event .event1 .content-wrap input::placeholder { color: #ccc4bf; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; }
+.oil .event .event1 .content-wrap input::placeholder { color: #ccc4bf; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 160px; }
+
+@media (max-width: 767px) { .oil .event .event1 .content-wrap input::placeholder { font-size: 64px; } }
 
 .oil .event .event1 button { display: block; margin: 76px auto 0 auto; min-width: 420px; height: 95px; background: #96120e; border-radius: 10vw; color: white; font-size: 28px; }
 
