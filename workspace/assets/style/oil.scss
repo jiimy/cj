@@ -2414,6 +2414,9 @@
           vertical-align: top;
           margin-top: 7px;
           margin-left: 4px;
+          @include media-mo() {
+            font-size: 11px;
+          }
         }
         .text {
           margin-top: 14px;
