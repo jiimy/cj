@@ -147,6 +147,8 @@
 
 @media (max-width: 767px) { .oil .special-event .card-wrap .card.right { width: calc(100% - 32px); height: 315px; margin-top: 50px; margin-left: 16px; } }
 
+@media (max-width: 767px) { .oil .special-event .card-wrap .card.right ul { text-align: right; } }
+
 .oil .special-event .card-wrap .card.right .one { width: 150px; }
 
 @media (max-width: 767px) { .oil .special-event .card-wrap .card.right .one { float: left; } }

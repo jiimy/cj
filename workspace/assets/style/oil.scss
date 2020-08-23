@@ -480,6 +480,11 @@
             margin-top: 50px;
             margin-left: 16px;
           }
+          ul {
+            @include media-mo() {
+              text-align: right;
+            }
+          }
           .one {
             width: 150px;
             @include media-mo() {
