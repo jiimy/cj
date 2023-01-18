@@ -1,45 +1,47 @@
-var gulp = require("gulp");
-var scss = require("gulp-sass");
-var sourcemaps = require("gulp-sourcemaps");
-var nodemon = require("gulp-nodemon");
-var browserSync = require("browser-sync");
-var concat = require("gulp-concat");
+var gulp = require('gulp');
+// var scss = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
+var nodemon = require('gulp-nodemon');
+var browserSync = require('browser-sync');
+var concat = require('gulp-concat');
 var imagemin = require('gulp-imagemin');
 var del = require('del');
+const scss = require('gulp-sass')(require('sass'));
 
 // 소스 파일 경로
 var PATH = {
-    HTML: "./workspace/html",
+    HTML: './workspace/html',
     ASSETS: {
-      FONTS: "./workspace/assets/fonts",
-      IMAGES: "./workspace/assets/images",
-      STYLE: "./workspace/assets/style",
-      SCRIPT: "./workspace/assets/script",
-      LIB: "./workspace/assets/lib",
+      FONTS: './workspace/assets/fonts',
+      IMAGES: './workspace/assets/images',
+      STYLE: './workspace/assets/style',
+      SCRIPT: './workspace/assets/script',
+      LIB: './workspace/assets/lib',
     },
   },
   // 산출물 경로
   DEST_PATH = {
-    HTML: "./dist",
+    HTML: './dist',
     ASSETS: {
-      FONTS: "./dist/assets/fonts",
-      IMAGES: "./dist/assets/images",
-      STYLE: "./dist/assets/style",
-      SCRIPT: "./dist/assets/script",
-      LIB: "./dist/assets/lib",
+      FONTS: './dist/assets/fonts',
+      IMAGES: './dist/assets/images',
+      STYLE: './dist/assets/style',
+      SCRIPT: './dist/assets/script',
+      LIB: './dist/assets/lib',
     },
   };
 
-gulp.task("scss:compile", () => {
+gulp.task('scss:compile', () => {
   return new Promise((resolve) => {
     var options = {
-      outputStyle: "compact", // nested, expanded, compact, compressed
-      indentType: "space", // space, tab , indentWidth: 4
+      outputStyle: 'compressed', // nested, expanded, compact, compressed
+      indentType: 'space', // space, tab , indentWidth: 4
       precision: 8,
       sourceComments: false, // 코멘트 제거 여부
     };
 
-    gulp.src(PATH.ASSETS.STYLE + "/*.scss")
+    gulp
+      .src(PATH.ASSETS.STYLE + '/*.scss')
       .pipe(sourcemaps.init())
       .pipe(scss(options))
       // .pipe(sourcemaps.write())
@@ -49,20 +51,21 @@ gulp.task("scss:compile", () => {
   });
 });
 
-gulp.task("html", () => {
+gulp.task('html', () => {
   return new Promise((resolve) => {
     gulp
-      .src(PATH.HTML + "/*.html")
+      .src(PATH.HTML + '/*.html')
       .pipe(gulp.dest(DEST_PATH.HTML))
       .pipe(browserSync.reload({ stream: true }));
     resolve();
   });
 });
 
-gulp.task("script:concat", () => {
+gulp.task('script:concat', () => {
   return new Promise((resolve) => {
-    gulp.src(PATH.ASSETS.SCRIPT + "/*.js") 
-    // src 경로에 있는 모든 js 파일을 common.js 라는 이름의 파일로 합친다.
+    gulp
+      .src(PATH.ASSETS.SCRIPT + '/*.js')
+      // src 경로에 있는 모든 js 파일을 common.js 라는 이름의 파일로 합친다.
       // .pipe(concat("common.js"))
       .pipe(gulp.dest(DEST_PATH.ASSETS.SCRIPT))
       .pipe(browserSync.reload({ stream: true }));
@@ -70,50 +73,53 @@ gulp.task("script:concat", () => {
   });
 });
 
-gulp.task("nodemon:start", () => {
+gulp.task('nodemon:start', () => {
   return new Promise((resolve) => {
     nodemon({
-      script: "app.js",
+      script: 'app.js',
       watch: DEST_PATH.HTML,
     });
     resolve();
   });
 });
 
-gulp.task("watch", () => {
+gulp.task('watch', () => {
   return new Promise((resolve) => {
-    gulp.watch(PATH.HTML + "/**/*.html", gulp.series(["html"]));
-    gulp.watch(PATH.ASSETS.STYLE + "/**/*.scss", gulp.series(["scss:compile"]));
-    gulp.watch(PATH.ASSETS.SCRIPT + "/**/*.js", gulp.series(["script:concat"]));
-    gulp.watch(PATH.ASSETS.IMAGES + "/**/*.*", gulp.series(['imagemin']));
+    gulp.watch(PATH.HTML + '/**/*.html', gulp.series(['html']));
+    gulp.watch(PATH.ASSETS.STYLE + '/**/*.scss', gulp.series(['scss:compile']));
+    gulp.watch(PATH.ASSETS.SCRIPT + '/**/*.js', gulp.series(['script:concat']));
+    gulp.watch(PATH.ASSETS.IMAGES + '/**/*.*', gulp.series(['imagemin']));
     resolve();
   });
 });
 
-gulp.task("browserSync", () => {
+gulp.task('browserSync', () => {
   return new Promise((resolve) => {
-    browserSync.init(null, { proxy: "http://localhost:8005", port: 8006 });
+    browserSync.init(null, { proxy: 'http://localhost:8005', port: 8006 });
     resolve();
   });
 });
 
-gulp.task("library", () => {
+gulp.task('library', () => {
   return new Promise((resolve) => {
-    gulp.src(PATH.ASSETS.LIB + "/*.js").pipe(gulp.dest(DEST_PATH.ASSETS.LIB));
+    gulp.src(PATH.ASSETS.LIB + '/*.js').pipe(gulp.dest(DEST_PATH.ASSETS.LIB));
     resolve();
   });
 });
 
-gulp.task("fonts", () => {
+gulp.task('fonts', () => {
   return new Promise((resolve) => {
-    gulp.src(PATH.ASSETS.FONTS + "/*.*").pipe(gulp.dest(DEST_PATH.ASSETS.FONTS));
+    gulp
+      .src(PATH.ASSETS.FONTS + '/*.*')
+      .pipe(gulp.dest(DEST_PATH.ASSETS.FONTS));
     resolve();
   });
 });
 
 gulp.task('imagemin', () => {
   return new Promise((resolve) => {
-    gulp.src( PATH.ASSETS.IMAGES + '/*.*' )
+    gulp
+      .src(PATH.ASSETS.IMAGES + '/*.*')
       // .pipe( imagemin([
       //     imagemin.gifsicle({interlaced: false}),
       //     imagemin.mozjpeg({progressive: true}),
@@ -125,28 +131,41 @@ gulp.task('imagemin', () => {
       //       ]
       //     })
       //   ]))
-      .pipe( gulp.dest( DEST_PATH.ASSETS.IMAGES ) )
-      .pipe( browserSync.reload({stream: true}) );
+      .pipe(gulp.dest(DEST_PATH.ASSETS.IMAGES))
+      .pipe(browserSync.reload({ stream: true }));
     resolve();
   });
 });
 
 gulp.task('clean', () => {
-  return new Promise( resolve => {
+  return new Promise((resolve) => {
     del.sync(DEST_PATH.HTML);
     resolve();
   });
 });
 
-
-gulp.task( 'default', gulp.series(['scss:compile', 'html', 'script:concat', 'imagemin', 'nodemon:start', 'browserSync', 'watch', 'fonts', 'library', 'clean']));
+gulp.task(
+  'default',
+  gulp.series([
+    'scss:compile',
+    'html',
+    'script:concat',
+    'imagemin',
+    'nodemon:start',
+    'browserSync',
+    'watch',
+    'fonts',
+    'library',
+    'clean',
+  ])
+);
 
 // var allSeries = gulp.series([
 //   "scss:compile",
 //   "html",
 //   "script:build",
-  // "fonts",
-  // "library",
+// "fonts",
+// "library",
 //   "nodemon:start",
 //   "browserSync",
 //   "watch"]);
